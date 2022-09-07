@@ -1,0 +1,94 @@
+.sectionProjeto{
+    margin: 30px auto 0px auto;
+    width: 95%;
+    &__title{
+        display: inline-block;
+        font-size: 25px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid hsl(195, 53%, 79%);
+    }
+    &__cardWrapper{
+        display: flex;
+        flex-direction: column;
+        border: 3px solid hsl(195, 53%, 60%);
+        max-width: 300px;
+        margin: 50px auto;
+        border-radius: 25px;
+        overflow: hidden;
+        max-height: 500px;
+        @media (max-width:400px) {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid hsl(195, 53%, 60%);
+            border-radius: 25px;
+            overflow: hidden;
+            margin: 50px auto;
+            max-width: 230px;
+            max-height: 500px;
+        }
+        &__imagePrev{
+            border: 10px solid red;
+           
+            @media (max-width:400px) {
+                min-height: 200px !important;
+            }
+        }
+        &__projectTitle{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+        &__tecs{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px;
+            max-width: 290px;
+        }
+        &__tec{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px;
+            max-width: 290px;
+            color: hsl(195, 53%, 60%);
+            &:hover{
+                color: hsl(195, 53%, 30%);
+            }
+        }
+        &__description{
+            max-height: 250px;
+            
+            padding: 20px;
+        }
+        &__anchor{
+            padding: 20px;
+            &__button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid hsl(195, 53%, 50%) ;
+                height: 30px;
+                border-radius: 20px;
+                text-decoration: none;
+                color: hsl(195, 53%, 50%);
+                cursor: pointer;
+                &:hover{
+                    color: hsl(195, 53%, 30%);
+                    border: 1px solid hsl(195, 53%, 30%) ;
+                }
+            }
+           
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
