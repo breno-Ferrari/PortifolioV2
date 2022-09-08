@@ -56,42 +56,75 @@ export default function Projetos() {
         
                 {projectist.map((item,index)=>(
                     <SwiperSlide key={index}>
-                        <div className={styles.sectionProjeto__cardWrapper} >
-                            <Image 
-                            alt="header" 
-                            src={item.src} 
-                            height={200} 
-                            width={200} 
-                            // layout="responsive"
-                            className={styles.sectionProjeto__cardWrapper__imagePrev}>
-                
-                            </Image>
-                            <h2 className={styles.sectionProjeto__cardWrapper__projectTitle}>
-                                {item.titulo}
-                            </h2>
-                            <div className={styles.sectionProjeto__cardWrapper__description}>
-                                {item.preview}
+                        {item.build ? 
+                            <div className={styles.sectionProjeto__cardWrapperConstruction} >
+                                <Image 
+                                alt="header" 
+                                src={item.src} 
+                                height={200} 
+                                width={200} 
+                                // layout="responsive"
+                                className={styles.sectionProjeto__cardWrapperConstruction__imagePrev}>
+                    
+                                </Image>
+                                <h2 className={styles.sectionProjeto__cardWrapperConstruction__projectTitle}>
+                                    {item.titulo}
+                                </h2>
+                                <div className={styles.sectionProjeto__cardWrapperConstruction__description}>
+                                    {item.preview}
+                                </div>
+                                <div className={styles.sectionProjeto__cardWrapperConstruction__tecs}>
+                                    <p>Tecnologias que serão utilizadas:</p>
+                                </div>
+                                <div className={styles.sectionProjeto__cardWrapperConstruction__tec}>
+                                    {item.tec1}
+                                    {item.tec2}
+                                    {item.tec3}
+                                    {item.tec4}
+                                </div>
+                                <div className={styles.sectionProjeto__cardWrapperConstruction__anchor}>
+                                    <a href={item.link} className={styles.sectionProjeto__cardWrapperConstruction__anchor__button} target="_blank" rel="noopener noreferrer">
+                                        Visualizar projeto
+                                    </a>
+                                </div>  
                             </div>
-                            <div className={styles.sectionProjeto__cardWrapper__tecs}>
-                                <p>Principais tecnologias utilizadas:</p>
+                        :
+                            <div className={styles.sectionProjeto__cardWrapper} >
+                                <Image 
+                                alt="header" 
+                                src={item.src} 
+                                height={200} 
+                                width={200} 
+                                // layout="responsive"
+                                className={styles.sectionProjeto__cardWrapper__imagePrev}>
+                    
+                                </Image>
+                                <h2 className={styles.sectionProjeto__cardWrapper__projectTitle}>
+                                    {item.titulo}
+                                </h2>
+                                <div className={styles.sectionProjeto__cardWrapper__description}>
+                                    {item.preview}
+                                </div>
+                                <div className={styles.sectionProjeto__cardWrapper__tecs}>
+                                    <p>Principais tecnologias utilizadas:</p>
+                                </div>
+                                <div className={styles.sectionProjeto__cardWrapper__tec}>
+                                    {item.tec1}
+                                    {item.tec2}
+                                    {item.tec3}
+                                    {item.tec4}
+                                </div>
+                                <div className={styles.sectionProjeto__cardWrapper__anchor}>
+                                    <a href={item.link} className={styles.sectionProjeto__cardWrapper__anchor__button} target="_blank" rel="noopener noreferrer">
+                                        Visualizar projeto
+                                    </a>
+                                </div>  
                             </div>
-                            <div className={styles.sectionProjeto__cardWrapper__tec}>
-                                  {item.tec1}
-                                  {item.tec2}
-                                  {item.tec3}
-                                  {item.tec4}
-                            </div>
-                            <div className={styles.sectionProjeto__cardWrapper__anchor}>
-                                <a href={item.link} className={styles.sectionProjeto__cardWrapper__anchor__button} target="_blank" rel="noopener noreferrer">
-                                    Visualizar projeto
-                                </a>
-                            </div>  
-                        </div>
+                        }
                     </SwiperSlide> 
                 ))}   
             </Swiper>         
-        </section>
-        
+        </section>   
     )
   }
   

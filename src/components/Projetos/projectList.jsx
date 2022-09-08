@@ -12,7 +12,8 @@ const projectist =
         tec2: <FaReact />,
         tec3: <DiJavascript1 />,
         tec4: <FaSass />,
-        link:"https://interactive-price-zeta.vercel.app/"
+        link:"https://interactive-price-zeta.vercel.app/",
+        build:false
       },
       {
         titulo:"Cardapio",
@@ -22,7 +23,19 @@ const projectist =
         tec2: <FaSass />,
         tec3: <DiJavascript1 />,
         tec4: <SiNextdotjs />,
-        link:"https://cardapio-breno-ferrari.vercel.app/"
+        link:"https://cardapio-breno-ferrari.vercel.app/",
+        build:false
+      },
+      {
+        titulo:"Em desenvolvimento",
+        preview:"Em desenvolvimento",
+        src:"/asset/bulldozer.gif",
+        tec1: <SiNextdotjs />,
+        tec2: <FaReact />,
+        tec3: <DiJavascript1 />,
+        tec4: <FaSass />,
+        link:"#",
+        build:true
       },
       
     ]

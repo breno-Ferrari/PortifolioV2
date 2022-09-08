@@ -5,13 +5,14 @@
 import Header from "../src/components/Header/header";
 import Projetos from "../src/components/Projetos/projetos";
 import Tecnologias from "../src/components/Tecnologias/tecnologias";
+import Footer from "../src/components/Footer/footer";
 export default function Home() {
   return (
     <>
       <Header />
       <Tecnologias />
       <Projetos />
+      <Footer />
     </>
-    
   )
 }
