@@ -1,7 +1,26 @@
 import styles from "./header.module.scss"
 import { BsGithub,BsLinkedin } from "react-icons/bs";
+import { useEffect } from "react";
 
 export default function Header() {
+    let textLength = 0;
+    let text = 'Olá, meu nome é Breno! Sou Desenvolvedor Front end \n Seja bem vindo ao meu portifolio.';
+
+    function typeWriterTitle() {
+        let textChar = text.charAt(textLength++);
+        let paragraph = document.getElementById("text");
+        let charElement = document.createTextNode(textChar);
+        paragraph.appendChild(charElement);
+        if(textLength < text.length+1) {
+            setTimeout(typeWriterTitle, 60);
+        } else {
+            text = '';
+        }
+      }
+      useEffect(()=>{
+        typeWriterTitle()
+      })
+
     return (
       <section className={styles.section}>
         <div className={styles.section__container}>
@@ -16,8 +35,7 @@ export default function Header() {
             </div>
         </div>
         <div className={styles.section__text}>
-            <h1 className={styles.section__text__title}>Olá, meu nome é Breno! Sou Desenvolvedor Front end <br></br><span className={styles.section__text__subtitle}>Seja Bem vindo ao meu portifolio.</span></h1>
-           
+            <h1 className={styles.section__text__title} id="text"></h1>
             <p className={styles.section__text__prev}>
                 Abaixo, estão algumas tecnologias e projetos que realizei ao longo do meu crescimento.
             </p>
