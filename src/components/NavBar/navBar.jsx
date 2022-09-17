@@ -1,4 +1,4 @@
-import styles from "./navBar.module.scss"
+import styles from "./NavBar.module.scss"
 import BarsMenu from "./bars/bars"
 import NavText from "./const"
 import Link from "../Link/link"
@@ -14,7 +14,6 @@ export default function NavBar() {
     const [list,setList] = useState("1")
     const [visible,setVisible] = useState(true)
     const tl = gsap.timeline()
-
     const listAnimation = () =>{  
       const duration = 0.5;
       const delay = 0.3;
