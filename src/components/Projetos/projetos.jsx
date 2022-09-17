@@ -40,7 +40,7 @@ export default function Projetos() {
    },[])
 
     return (
-        <section className={styles.sectionProjeto}>
+        <section className={styles.sectionProjeto} id="projetos">
             <h2 className={styles.sectionProjeto__title}>Projetos</h2>    
             <Swiper
                 slidesPerView={size}

@@ -1,14 +1,18 @@
 import styles from "./header.module.scss"
-import { BsGithub,BsLinkedin } from "react-icons/bs";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import Image from 'next/future/image'
+
+
+import profilePic from "../../../public/asset/foto2.jpeg"
 
 export default function Header() {
     let textLength = 0;
     let text = 'Olá, meu nome é Breno! Sou Desenvolvedor Front end \n Seja bem vindo ao meu portifolio.';
-
+    const effectRan = useRef(false)
+    const title = useRef(false)
     function typeWriterTitle() {
         let textChar = text.charAt(textLength++);
-        let paragraph = document.getElementById("text");
+        let paragraph = title.current;
         let charElement = document.createTextNode(textChar);
         paragraph.appendChild(charElement);
         if(textLength < text.length+1) {
@@ -18,29 +22,35 @@ export default function Header() {
         }
       }
       useEffect(()=>{
-        typeWriterTitle()
+        if(effectRan.current === false){
+          typeWriterTitle()
+          return() =>{
+              effectRan.current = true
+          }
+      }
       })
 
+      
+
     return (
-      <section className={styles.sectionHeader}>
-        <div className={styles.sectionHeader__container}>
-            <div className={styles.sectionHeader__container__left}>
-                <h1>
-                    Bem vindo
-                </h1>
-            </div>
-            <div className={styles.sectionHeader__container__right}>
-                <a href="https://bit.ly/3q4s0oL" target="_blank" rel="noreferrer" className={styles.sectionHeader__container__right__github}><BsGithub /></a>
-                <a href="https://bit.ly/3cIuTZe" target="_blank" rel="noreferrer" className={styles.sectionHeader__container__right__linkedin}><BsLinkedin /></a>
-            </div>
-        </div>
+      <section className={styles.sectionHeader} id="header">
         <div className={styles.sectionHeader__text}>
-            <h1 className={styles.sectionHeader__text__title} id="text"></h1>
-            <p className={styles.sectionHeader__text__prev}>
-                Abaixo, estão algumas tecnologias e projetos que realizei ao longo do meu crescimento.
-            </p>
+            <h1 className={styles.sectionHeader__text__title} ref={title}></h1>
+        </div>
+        <div className={styles.sectionHeader__aboutMe} id="aboutMe">
+            <h2 className={styles.sectionHeader__aboutMe__title}>
+              Sobre Mim
+            </h2>
+            <div className={styles.sectionHeader__aboutMe__content}>
+              <p className={styles.sectionHeader__aboutMe__content__p}>
+                Meu nome é Breno Velosa Ferrari, tenho 22 anos, estudande de engenharia da computação no ultimo semestre. Sou desenvolvedor Web com foco em front-end
+              </p> 
+              <div className={styles.sectionHeader__aboutMe__content__imageContainer}>
+                <Image src={profilePic} alt="Picture of the author" className={styles.sectionHeader__aboutMe__content__imageContainer__image}/> 
+              </div> 
+               
+            </div>
         </div>
       </section>
     )
   }
-  

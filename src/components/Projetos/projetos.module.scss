@@ -1,6 +1,8 @@
 .sectionProjeto{
+    scroll-margin-top: 85px;
     margin: 30px auto 0px auto;
     width: 95%;
+    border-bottom: 3px solid hsl(195, 53%, 79%);
     &__title{
         display: inline-block;
         font-size: 25px;

@@ -6,37 +6,37 @@ const Tec = [
     { 
         Icon1:<AiOutlineHtml5 />,
         Title1: 'HTML5' , 
-        Content1:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com essa linguagem de marcação.",
+        Content1:"",
         Icon2:<TbBrandCss3 />,
         Title2: 'CSS3' , 
-        Content2:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com esse tipo de estilização da pagina.",
+        Content2:"",
         Exhibit2:true
     },
     { 
         Icon1:<TbBrandJavascript />,
         Title1: 'JavaScript' , 
-        Content1:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com essa linguagem de marcação.",
+        Content1:"",
         Icon2:<FaReact />,
         Title2: 'TypeScript' , 
-        Content2:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com essa lingaugem de marcação.",
+        Content2:"",
         Exhibit2:true
     },
     { 
         Icon1:<FaReact />,
         Title1: 'React' , 
-        Content1:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com essa linguagem de marcação.",
+        Content1:"",
         Icon2:<TbBrandNextjs />,
         Title2: 'NextJs' , 
-        Content2:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com essa lingaugem de marcação.",
+        Content2:"",
         Exhibit2:true
     },
     { 
         Icon1:<TbBrandAngular />,
         Title1: 'Angular' , 
-        Content1:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com essa linguagem de marcação.",
+        Content1:"",
         Icon2:<TbBrandVue />,
         Title2: 'VueJs' , 
-        Content2:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com essa lingaugem de marcação.",
+        Content2:"",
         Exhibit2:true
     },
    
@@ -51,7 +51,7 @@ const Tec = [
 //           item1: [{
 //               Icon1:<AiOutlineHtml5 />,
 //               Title1: 'HTML5' , 
-//               Content1:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com essa linguagem de marcação.",
+//               Content1:"",
 //           }],
 //           item2: [{
 //               Icon2:<TbBrandCss3 />,
@@ -63,7 +63,7 @@ const Tec = [
 //           item1: [{
 //               Icon1:<TbBrandJavascript />,
 //               Title1: 'JavaScript' , 
-//               Content1:"Por conta das minhas experiencias profissionais e academicas, possuo experiência com essa linguagem de marcação.",
+//               Content1:"",
   
 //           }],
 //           item2: [{

@@ -1,0 +1,8 @@
+.link{
+    text-decoration: none;
+    cursor:pointer;
+    color:hsl(195, 53%, 70%);
+    &:hover{
+        color:hsl(195, 53%, 50%);
+    }
+}

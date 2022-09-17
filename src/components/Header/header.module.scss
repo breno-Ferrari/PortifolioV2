@@ -1,61 +1,105 @@
 .sectionHeader{ 
-    margin: 20px auto;
+    scroll-margin-top: 85px;
+    margin: 30px auto 0px auto;
     width: 95%;
-    &__container{
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        height: 100%;
-        padding-bottom:10px;
-        border-bottom: 3px solid hsl(195, 53%, 79%);
-       &__left > *{
-            font-size: 20px;  
-       }
-       &__right{
-            display: flex;
-            gap: 30px;
-            font-size: 20px;
-            & > *{
-                cursor: pointer;
-                color: hsl(195, 53%, 79%);
-                transition: all 0.2s;
-                &:hover{
-                    color: hsl(195, 53%, 50%);
-                    transition: all 0.2s;
-                }
-            }
-       }
-    }
-
+    border-bottom: 3px solid hsl(195, 53%, 79%);
+    height: 900px;
     &__text{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
         margin-top: 30px;
         padding-bottom:10px;
-        border-bottom: 3px solid hsl(195, 53%, 90%);
+        height: 50%;
+        border-bottom: 3px solid hsl(195, 53%, 79%);
         &>*{
             line-height: 40px;
         }
         &__title{
-            line-height: 35px;
-            width: 80%;
-            font-size: 35px;
+            line-height: 50px;
+            width: 100%;
+            font-size: 60px;
             text-align: left;
             font-family: monospace;
             white-space: pre-line;
             margin-bottom: 30px;
             &::after{
                 content: "|";
-                font-size: 35px;
-                line-height: 30px;
+                font-size: 60px;
+                line-height: 50px;
                 animation: blink 0.5s step-end infinite alternate;
+            }
+            @media (max-width:900px) {
+                font-size: 30px;
+                &::after{
+                    content: "|";
+                    font-size: 30px;
+                    line-height: 50px;
+                    animation: blink 0.5s step-end infinite alternate;
+                }
             }
         }
         &__prev{
-            font-size: 15px;
+            font-size: 30px;
             @media (max-width:400px) {
                 font-size: 20px;
             }
         }
     }
+    &__aboutMe{
+        height: 50%;
+        // border-bottom: 3px solid hsl(195, 53%, 79%);
+        padding-top: 30px;
+        &__title{
+            display: inline-block;
+            font-size: 40px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid hsl(195, 53%, 79%);
+        }
+        &__content{
+            display: flex;
+            align-items: center;
+
+            &__p{
+                width: 100%;
+                font-size: 20px;
+            }
+            &__imageContainer{
+                width: 100%;
+                text-align: center;
+               &__image{
+                width: 300px;
+                height: 300px;
+               }
+            }
+            @media (max-width:900px){
+                flex-direction: column-reverse; 
+                &__p{
+                    width: 100%;
+                    font-size: 25px;
+                    text-align: center;
+                }
+                &__imageContainer{
+                    width: 100%;
+                    text-align: center;
+                   &__image{
+                    width: 40%;
+                    height: 40%;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                   }
+                }
+            }
+        }
+        @media (max-width:900px){
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+    @media (max-width:900px){
+        height: 100%;
+    }
+    
 }
 
 @keyframes typing {
@@ -74,36 +118,3 @@
     from, to { color: transparent }
     50% { color: rgba(0, 0, 0) }
 }
-
-
-// &__subTitle{
-//     width: 90%;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     border-right: 3px solid;
-//     font-family: monospace;
-//     font-size: 2em;
-//     animation:type 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
-// }
-// &__prev{
-//     font-size: 15px;
-// }
-// }
-// }
-// @keyframes type {
-// 0% {
-// width: 0;
-// }
-// 1%, 99%{
-// border-right: 1px solid black;
-// }
-// 100%{
-// border-right: none;
-// }
-// }
-
-// @keyframes blink {
-// 50% {
-// border-color: transparent;
-// }
-// }
