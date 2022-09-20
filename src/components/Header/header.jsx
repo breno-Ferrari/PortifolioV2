@@ -37,20 +37,13 @@ export default function Header() {
         <div className={styles.sectionHeader__text}>
             <h1 className={styles.sectionHeader__text__title} ref={title}></h1>
         </div>
-        <div className={styles.sectionHeader__aboutMe} id="aboutMe">
-            <h2 className={styles.sectionHeader__aboutMe__title}>
-              Sobre Mim
-            </h2>
-            <div className={styles.sectionHeader__aboutMe__content}>
-              <p className={styles.sectionHeader__aboutMe__content__p}>
-                Meu nome é Breno Velosa Ferrari, tenho 22 anos, estudande de engenharia da computação no ultimo semestre. Sou desenvolvedor Web com foco em front-end
-              </p> 
-              <div className={styles.sectionHeader__aboutMe__content__imageContainer}>
-                <Image src={profilePic} alt="Picture of the author" className={styles.sectionHeader__aboutMe__content__imageContainer__image}/> 
-              </div> 
-               
-            </div>
-        </div>
+        <a href="#aboutMe" className={styles.sectionHeader__arrowContainer}>
+          <div className={styles.sectionHeader__arrowContainer__arrow}></div>
+          <p className={styles.sectionHeader__arrowContainer__textArrow}>
+            scroll down
+          </p>
+        </a>
+        
       </section>
     )
   }

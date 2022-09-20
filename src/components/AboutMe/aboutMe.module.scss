@@ -1,0 +1,77 @@
+.sectionAboutMe{ 
+    scroll-margin-top: 85px;
+    margin: 30px auto 0px auto;
+    width: 95%;
+    border-bottom: 3px solid hsl(195, 53%, 79%);
+    &__aboutMe{
+        height: 50%;
+        // border-bottom: 3px solid hsl(195, 53%, 79%);
+        padding-top: 30px;
+        &__title{
+            display: inline-block;
+            font-size: 25px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid hsl(195, 53%, 79%);
+        }
+        &__content{
+            display: flex;
+            align-items: center;
+
+            &__p{
+                width: 100%;
+                font-size: 20px;
+            }
+            &__imageContainer{
+                width: 100%;
+                text-align: center;
+               &__image{
+                width: 300px;
+                height: 300px;
+               }
+            }
+            @media (max-width:900px){
+                flex-direction: column-reverse; 
+                &__p{
+                    width: 100%;
+                    font-size: 25px;
+                    text-align: center;
+                }
+                &__imageContainer{
+                    width: 100%;
+                    text-align: center;
+                   &__image{
+                    width: 40%;
+                    height: 40%;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                   }
+                }
+            }
+        }
+        @media (max-width:900px){
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+    @media (max-width:900px){
+        height: 100%;
+    }
+    
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    1%, 99%{
+        border-right: 3px solid black;
+    }
+    100%{
+        border-right: none;
+    }
+}
+
+@keyframes blink {
+    from, to { color: transparent }
+    50% { color: rgba(0, 0, 0) }
+}
