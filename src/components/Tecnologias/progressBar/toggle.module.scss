@@ -1,0 +1,64 @@
+.container{
+    margin: 0 auto;
+    width: 100%;
+    &__slider{
+        appearance: none;
+        //mexe na barra
+        &[type=range] { 
+            margin-right: 15px;
+            margin-top: 10px;
+            height: 10px;
+            background: hsl(224, 65%, 95%);
+            border-radius: 50px;
+            width: 100%;
+            //mexe na cor da esquerda
+            background-image: linear-gradient(hsl(195, 53%, 90%), hsl(195, 53%, 90%));
+            background-repeat: no-repeat;
+            
+        }
+        // chrome
+        &[type=range]::-webkit-slider-thumb {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: hsl(195, 53%, 60%);
+          
+            // &:hover{
+            //     box-shadow: 1px 8px 30px hsl(195, 53%, 60%);
+            //     transition: all 0.3s;
+            // }
+        }
+        // mozila
+        &[type=range]::-moz-range-thumb {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: hsl(195, 53%, 60%);
+            background-size: 25px;
+        }
+        // IE
+        &[type=range]::-ms-thumb {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: hsl(195, 53%, 60%);
+            background-size: 25px;
+        }
+       
+    }
+    @media (max-width:750px) {
+        top: -7%; 
+    }   
+}
