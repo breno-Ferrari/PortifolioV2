@@ -41,7 +41,10 @@ export default function Projetos() {
 
     return (
         <section className={styles.sectionProjeto} id="projetos">
-            <h2 className={styles.sectionProjeto__title}>Projetos</h2>    
+            <div className={styles.sectionProjeto__containerTitle}>
+                <h2 className={styles.sectionProjeto__containerTitle__title}>Projetos</h2>    
+            </div>
+            
             <Swiper
                 slidesPerView={size}
                 slidesPerGroup={1}

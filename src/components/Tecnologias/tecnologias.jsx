@@ -7,8 +7,11 @@ export default function Tecnologias() {
 
     return (
       <section className={styles.tec} id="tecnologias">
-            <h1 className={styles.tec__title}>Tecnologias</h1>
+            <div className={styles.tec__containerTitle}>
+                <h2 className={styles.tec__containerTitle__title}>Projetos</h2>    
+            </div>
             <div className={styles.tec__tecnologias}>
+               
                 {Tec.map((item,index)=>(
                     <div className={styles.tec__tecnologias__row} key={index}>
                         <div className={styles.tec__tecnologias__row__item}>

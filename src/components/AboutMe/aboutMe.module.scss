@@ -21,6 +21,12 @@
                     font-size:20px;
                     line-height: 25px;
                     margin: 30px 0px;
+                    @media (max-width:900px){
+                        font-size: 22px; 
+                     }
+                }
+                @media (max-width:900px){
+                   width: 95%; 
                 }
             }
             &__imageContainer{
@@ -33,20 +39,20 @@
             }
             @media (max-width:900px){
                 flex-direction: column-reverse; 
-                &__p{
-                    width: 100%;
-                    font-size: 25px;
-                    text-align: center;
-                }
                 &__imageContainer{
                     width: 100%;
                     text-align: center;
                    &__image{
-                    width: 40%;
-                    height: 40%;
+                    width: 60%;
+                    height: 60%;
                     padding-top: 20px;
                     padding-bottom: 20px;
                    }
+                }
+                &__p{
+                    width: 100%;
+                    font-size: 25px;
+                    text-align: center;
                 }
             }
         }
@@ -54,9 +60,6 @@
             flex-direction: column-reverse;
             text-align: center;
         }
-    }
-    @media (max-width:900px){
-        height: 100%;
     }
     
 }
