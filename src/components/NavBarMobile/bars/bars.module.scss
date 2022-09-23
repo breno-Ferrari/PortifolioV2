@@ -1,0 +1,36 @@
+.container{
+  display: inline-block;
+  cursor: pointer;
+  &__change{
+    &__bar1{
+      transform: rotate(-45deg) translate(-8px, 7px);
+    }
+    &__bar2{
+      opacity: 0;
+    }
+    &__bar3{
+      transform: rotate(45deg) translate(-6px, -6px);
+    }
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: hsl(195, 53%, 79%);
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  &:visited{
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 4px;
+      background-color: hsl(195, 53%, 59%);
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+   
+  }
+}
+
+
+
+

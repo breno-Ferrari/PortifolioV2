@@ -7,11 +7,13 @@ import Projetos from "../src/components/Projetos/projetos";
 import Tecnologias from "../src/components/Tecnologias/tecnologias";
 import Footer from "../src/components/Footer/footer";
 import NavBar from "../src/components/NavBar/navBar";
+import NavBarMobile from "../src/components/NavBarMobile/navBarMobile";
 import AboutMe from "../src/components/AboutMe/aboutMe";
 export default function Home() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
+      <NavBarMobile />
       <Header />
       <AboutMe />
       <Tecnologias />
