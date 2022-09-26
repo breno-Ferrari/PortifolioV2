@@ -85,11 +85,18 @@ export default function Projetos() {
                                     {item.tec3}
                                     {item.tec4}
                                 </div>
-                                <div className={styles.sectionProjeto__cardWrapperConstruction__anchor}>
-                                    <a href={item.link} className={styles.sectionProjeto__cardWrapperConstruction__anchor__button} target="_blank" rel="noopener noreferrer">
-                                        Visualizar projeto
-                                    </a>
-                                </div>  
+                                <div className={styles.sectionProjeto__cardWrapperConstruction__container}>
+                                    <div className={styles.sectionProjeto__cardWrapperConstruction__container__anchor}>
+                                        <a href={item.link} className={styles.sectionProjeto__cardWrapperConstruction__container__anchor__button} target="_blank" rel="noopener noreferrer">
+                                            Visualizar projeto
+                                        </a>
+                                    </div>  
+                                    <div className={styles.sectionProjeto__cardWrapperConstruction__container__anchor}>
+                                        <a href={item.link} className={styles.sectionProjeto__cardWrapperConstruction__container__anchor__button} target="_blank" rel="noopener noreferrer">
+                                            Visualizar github
+                                        </a>
+                                    </div>  
+                                </div>
                             </div>
                         :
                             <div className={styles.sectionProjeto__cardWrapper} >
@@ -117,11 +124,19 @@ export default function Projetos() {
                                     {item.tec3}
                                     {item.tec4}
                                 </div>
-                                <div className={styles.sectionProjeto__cardWrapper__anchor}>
-                                    <a href={item.link} className={styles.sectionProjeto__cardWrapper__anchor__button} target="_blank" rel="noopener noreferrer">
-                                        Visualizar projeto
-                                    </a>
-                                </div>  
+                                <div className={styles.sectionProjeto__cardWrapper__container}>
+                                    <div className={styles.sectionProjeto__cardWrapper__container__anchor}>
+                                        <a href={item.link} className={styles.sectionProjeto__cardWrapper__container__anchor__button} target="_blank" rel="noopener noreferrer">
+                                            Visualizar projeto
+                                        </a>
+                                    </div>  
+                                    <div className={styles.sectionProjeto__cardWrapper__container__anchor}>
+                                        <a href={item.link} className={styles.sectionProjeto__cardWrapper__container__anchor__button} target="_blank" rel="noopener noreferrer">
+                                            Visualizar projeto
+                                        </a>
+                                    </div>  
+                                </div>
+                                
                             </div>
                         }
                     </SwiperSlide> 

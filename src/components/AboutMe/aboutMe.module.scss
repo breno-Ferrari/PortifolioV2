@@ -20,12 +20,12 @@
                 justify-content: center;
                 width: 50%;
                 &__p{
-                    font-size: clamp(1.5rem, 1vw, 2rem); 
+                    font-size: clamp(1.2rem, 1vw, 2rem); 
                     line-height: 2rem;
                     margin: 1rem 0rem;
                     @media (max-width:56.25rem){ //900px
                         // font-size: 22px;
-                        font-size: clamp(1.3rem, 50%, 2.7rem);  
+                        font-size: clamp(1.2rem, 50%, 2.7rem);  
                      }
                 }
                 @media (max-width:56.25rem){ //900px

@@ -13,6 +13,7 @@ const projectist =
         tec3: <DiJavascript1 />,
         tec4: <FaSass />,
         link:"https://interactive-price-zeta.vercel.app/",
+        git:"https://github.com/breno-Ferrari/Interactive-price",
         build:false
       },
       {
@@ -23,7 +24,8 @@ const projectist =
         tec2: <FaSass />,
         tec3: <DiJavascript1 />,
         tec4: <SiNextdotjs />,
-        link:"https://cardapio-breno-ferrari.vercel.app/",
+        site:"https://cardapio-breno-ferrari.vercel.app/",
+        git:"https://github.com/breno-Ferrari/Cardapio",
         build:false
       },
       {
@@ -34,7 +36,8 @@ const projectist =
         tec2: <FaReact />,
         tec3: <DiJavascript1 />,
         tec4: <FaSass />,
-        link:"#",
+        site:"#",
+        git:"#",
         build:true
       },
       

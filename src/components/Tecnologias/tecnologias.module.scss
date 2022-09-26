@@ -26,7 +26,8 @@
             align-items: center;
             &__item{
                 display: flex;
-                width: 100%;
+                align-items: center;
+                width: 50%;
                 margin: 1.8rem 0px 0px 0px;
                 &__box{
                     display: flex;
@@ -51,15 +52,16 @@
                     }
                     &__text{
                         margin-top: 0.5rem;
-                        font-size: clamp(1rem,1vw, 1.5rem); 
+                        font-size: clamp(1rem, 1vw, 2rem);
                     }
                     &__bar{
                         display: flex;
                         flex-direction: row;
-                        align-items: flex-end;
+                        align-items: center;
                         &__text{
                             margin-top: 0.5rem;
-                            font-size: clamp(1rem,1vw, 1.5rem); 
+                            margin-left : 0.5rem;
+                            font-size: clamp(1rem, 1vw, 2rem); 
                         }
                     }
                      @media (max-width:56.25rem){ //900px
@@ -71,12 +73,14 @@
                
                 @media (max-width:56.25rem){ //900px
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     margin-top: 3.1rem;
-                    flex-direction: column;
+                    width: 100%;
                 }
             }
              @media (max-width:56.25rem){ //900px
+                flex-direction: column;
                 flex-wrap: wrap;
             }
         }
