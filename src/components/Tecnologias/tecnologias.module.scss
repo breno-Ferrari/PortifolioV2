@@ -23,6 +23,7 @@
         &__row{
             display: flex;
             flex-wrap: nowrap;
+            align-items: center;
             &__item{
                 display: flex;
                 width: 100%;
@@ -35,7 +36,7 @@
                     width: 4rem;
                     border: 0.15rem solid lightgray;
                     border-radius: 50%;
-                    font-size: clamp(2.5rem, 0.5vw, 3rem); 
+                    font-size: clamp(2rem, 1vw, 2.5rem); 
                     color:lightblue ;
                     min-width: 4rem;
                     transition: all 0.2s;
@@ -46,19 +47,19 @@
                     margin-left: 1.2rem;
                     width: 80%;
                     &__title{
-                        font-size: 1.1rem;
+                        font-size: clamp(1.5rem,1vw, 2rem); 
                     }
                     &__text{
                         margin-top: 0.5rem;
-                        font-size: 1rem;
+                        font-size: clamp(1rem,1vw, 1.5rem); 
                     }
                     &__bar{
                         display: flex;
                         flex-direction: row;
                         align-items: flex-end;
                         &__text{
-                            font-size: 0.8rem;
-                            margin-left: 1rem;
+                            margin-top: 0.5rem;
+                            font-size: clamp(1rem,1vw, 1.5rem); 
                         }
                     }
                      @media (max-width:56.25rem){ //900px
