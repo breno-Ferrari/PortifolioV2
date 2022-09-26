@@ -8,7 +8,7 @@ export default function Tecnologias() {
     return (
       <section className={styles.tec} id="tecnologias">
             <div className={styles.tec__containerTitle}>
-                <h2 className={styles.tec__containerTitle__title}>Projetos</h2>    
+                <h2 className={styles.tec__containerTitle__title}>Tecnologias</h2>    
             </div>
             <div className={styles.tec__tecnologias}>
                

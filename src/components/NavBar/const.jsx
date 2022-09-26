@@ -1,5 +1,5 @@
 const NavText = [
-    { value: 'Sobre Mim',href:"#header"},
+    { value: 'Sobre Mim',href:"#aboutMe"},
     { value: 'Tecnologias',href:"#tecnologias"},
     { value: 'Projetos',href:"#projetos"},  
   ];

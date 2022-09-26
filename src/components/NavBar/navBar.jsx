@@ -12,7 +12,8 @@ export default function NavBar() {
 
     const ref = useRef(new Array(NavText.length));
     const [list,setList] = useState("1")
-    const [visible,setVisible] = useState(true)
+    const [visible,setVisible] = useState(false)
+
     const tl = gsap.timeline()
     const listAnimation = () =>{  
       const duration = 0.5;
@@ -21,19 +22,24 @@ export default function NavBar() {
       if(list === "0"){
         tl.to(ref.current, {
           xPercent: -xMove,
-            autoAlpha: list,
-            duration: duration,
-            stagger:delay
+          autoAlpha: list,
+          duration: duration,
+          stagger:delay,
         })
         setList("1")
+        setTimeout(()=>{
+          setVisible(false)
+        },1000)
+        
       }else{
         tl.to(ref.current, {
           xPercent: xMove,
           autoAlpha: list,
           duration: duration,
-          stagger:delay
+          stagger:delay,
         })
         setList("0")
+        setVisible(true)
       }
     } 
 
@@ -49,12 +55,10 @@ export default function NavBar() {
                 {
                   NavText.map((item,i)=>(
                     <li className={styles.container__align__itens__left__list__line} key={i} ref={(el) => (ref.current[i] = el)} >
-                        {visible ?   
-                          <Link href={item.href}>
-                              {item.value}
-                          </Link>:""}
-                          
-                      
+                      {visible ?   
+                        <Link href={item.href}>
+                            {item.value}
+                        </Link>:""}
                     </li>
                   ))
                 }

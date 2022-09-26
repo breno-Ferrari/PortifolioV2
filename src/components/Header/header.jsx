@@ -10,6 +10,7 @@ export default function Header() {
     let text = 'Olá, meu nome é Breno! Sou Desenvolvedor Front end \n Seja bem vindo ao meu portifolio.';
     const effectRan = useRef(false)
     const title = useRef(false)
+    
     function typeWriterTitle() {
         let textChar = text.charAt(textLength++);
         let paragraph = title.current;

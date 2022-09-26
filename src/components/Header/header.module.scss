@@ -3,50 +3,50 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    scroll-margin-top: 85px;
-    margin: 30px auto 0px auto;
+    scroll-margin-top: 5.313rem;
+    margin: 1.9rem auto 0rem auto;
     width: 95%;
-    border-bottom: 3px solid hsl(195, 53%, 79%);
-    height: 800px;
+    border-bottom: 0.2rem solid hsl(195, 53%, 79%);
+    height: 100vh;
     &__text{
         display:flex ;
         flex-direction: column;
         justify-content: center;
-        margin-top: 30px;
-        padding-bottom:10px;
+        margin-top: 1.9rem;
+        padding-bottom:0.6rem;
         height: 50%;
 
         &>*{
-            line-height: 40px;
+            line-height: 2.5rem;
         }
         &__title{
-            line-height: 50px;
+            line-height: 3.1rem;
             width: 100%;
-            font-size: 60px;
+            font-size: 3.7rem;
             text-align: left;
             font-family: monospace;
             white-space: pre-line;
-            margin-bottom: 30px;
+            margin-bottom: 1.9rem;
             &::after{
                 content: "|";
-                font-size: 60px;
-                line-height: 50px;
+                font-size: 3.75rem;
+                line-height: 3.1rem;
                 animation: blink 0.5s step-end infinite alternate;
             }
-            @media (max-width:900px) {
-                font-size: 30px;
+            @media (max-width:56.25rem){ //900px
+                font-size: 1.875rem;
                 &::after{
                     content: "|";
-                    font-size: 30px;
-                    line-height: 50px;
+                    font-size: 1.9rem;
+                    line-height: 3.1rem;
                     animation: blink 0.5s step-end infinite alternate;
                 }
             }
         }
         &__prev{
-            font-size: 30px;
-            @media (max-width:400px) {
-                font-size: 20px;
+            font-size: 1.9rem;
+            @media (max-width:25rem) {//400px
+                font-size: 1.3rem;
             }
         }
     }
@@ -60,62 +60,61 @@
             &:after{
                 
                 position: relative;
-                top: -5px;
+                top: -0.3rem;
                 background-color: transparent;
-                border: 3px solid hsl(195, 53%, 59%);
+                border: 0.2rem solid hsl(195, 53%, 59%);
                 border-left: 0;
                 border-top: 0;
                 content: "";
                 display: block;
-                height: 25px;
+                height: 1.5rem;
                 transform: translate(0,0) rotate(45deg) ;
-                width: 25px;
+                width: 1.5rem;
                 animation: floatArrow 3s ease-in-out infinite;
             }
             &:before{
 
                 background-color: transparent;
-                border: 3px solid hsl(195, 53%, 59%);
+                border: 0.2rem solid hsl(195, 53%, 59%);
                 border-left: 0;
                 border-top: 0;
                 content: "";
                 display: block;
-                height: 25px;
-                transform: translate(0,30px) rotate(45deg) ;
-                width: 25px;
-                
+                height: 1.6rem;
+                transform: translate(0,1.9rem) rotate(45deg) ;
+                width: 1.6rem;
                 animation: floatArrow 3s ease-in-out infinite;
             }
         }
         &__textArrow{
             color:hsl(195, 53%, 70%);
             position: relative;
-            top: -5px;
-            font-size: 14px;
-            height: 35px;
+            top: -0.3rem;
+            font-size: 0.9rem;
+            height: 2.2rem;
             transform: rotate(0deg);
-            width: 35px;
+            width: 2.2rem;
             animation: floatText 3s ease-in-out infinite;
         }
     }
     
-    @media (max-width:900px){
-        height: 100vh;
-    }
+    // @media (max-width:56.25rem){ //900px
+    //     height: 100vh;
+    // }
     
 }
 
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-    1%, 99%{
-        border-right: 3px solid black;
-    }
-    100%{
-        border-right: none;
-    }
-}
+// @keyframes typing {
+//     0% {
+//         width: 0;
+//     }
+//     1%, 99%{
+//         border-right: 3px solid black;
+//     }
+//     100%{
+//         border-right: none;
+//     }
+// }
 
 @keyframes blink {
     from, to { color: transparent }
@@ -138,7 +137,7 @@
         transform: translate(0px, 10px);
     }
     50%  {  
-        transform: translate(0px, 40px);
+        transform: translate(0px, 2.5rem);
     }
     100%   { 
         transform: translate(0px, 10px);
