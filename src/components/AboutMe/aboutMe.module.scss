@@ -2,14 +2,16 @@
     scroll-margin-top: 5.313rem;
     margin: 1.9rem auto 0rem auto;
     width: 95%;
-    border-bottom: 0.2rem solid hsl(195, 53%, 79%);
+    border-bottom: 0.2rem solid var(--border-bottom);
+    padding: 30px 0px;
+    color: var(--text-content-color);
     &__aboutMe{
         &__title{
             display: inline-block;
             // font-size: 40px;
             font-size: clamp(2.5rem,1vw, 3rem); 
             padding-bottom: 0.3rem;
-            border-bottom: 0.125rem solid hsl(195, 53%, 79%);
+            border-bottom: 0.125rem solid var(--border-bottom);
         }
         &__content{
             display: flex;
@@ -50,7 +52,7 @@
                 }
             }
         }
-       @media (max-width:56.25rem){ //900px
+        @media (max-width:56.25rem){ //900px
             flex-direction: column-reverse;
             text-align: center;
         }
@@ -63,7 +65,7 @@
         width: 0;
     }
     1%, 99%{
-        border-right: 0.2rem solid black;
+        border-right: 0.2rem solid var(--text-content-color);
     }
     100%{
         border-right: none;
@@ -72,5 +74,5 @@
 
 @keyframes blink {
     from, to { color: transparent }
-    50% { color: rgba(0, 0, 0) }
+    50% { color: var(--text-content-color)}
 }

@@ -23,7 +23,7 @@
       top: 0;
       left: -120%;
       justify-content: center;
-      background-color: hsl(0, 0%, 16%);
+      background-color: var(--bg-NavMobile);
       transition: all 0.3s;
     }
     &__sideMenuActive{
@@ -34,14 +34,15 @@
       top: 0;
       left: 0%;
       justify-content: center;
-      background-color: hsl(0, 0%, 16%);
+      background-color: var(--bg-NavMobile);
       transition: all 0.3s;
       &__list{
         display: flex;
         flex-direction: column;
         &__burguer{
           display: flex;
-          justify-content: flex-end;
+          justify-content: space-between;
+          align-items: center;
           padding:1.8rem 1.8rem  0rem 1.8rem ;
           transition: all 0.5s;
         }

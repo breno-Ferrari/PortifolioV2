@@ -3,7 +3,7 @@ import BarsMenu from "./bars/bars"
 import { useState ,useRef} from "react";
 import NavTextMobile from "./const" 
 import Link from "../Link/link"
-
+import ThemeToggle from "../ThemeToggle/themeToggle"
 export default function NavBarMobile() {
     const [menu,setMenu] = useState(true);
     const ref = useRef(new Array(NavTextMobile.length));
@@ -24,11 +24,14 @@ export default function NavBarMobile() {
             <nav className={styles.container__navBar}>
                 <div className={menu===true ? styles.container__navBar__burguer :styles.container__navBar__burguerActive} onClick={activeMenu} >
                     <BarsMenu />
+                    
                 </div>
                 <div className={menu===true ? styles.container__navBar__sideMenu :styles.container__navBar__sideMenuActive}>
                     <ul className={styles.container__navBar__sideMenuActive__list}>
                         <div className={styles.container__navBar__sideMenuActive__list__burguer} onClick={activeMenu} >
+                            <ThemeToggle />
                             <BarsMenu />
+                           
                         </div>
                         {
                         NavTextMobile.map((item,i)=>(

@@ -92,7 +92,7 @@ export default function Projetos() {
                                         </a>
                                     </div>  
                                     <div className={styles.sectionProjeto__cardWrapperConstruction__container__anchor}>
-                                        <a href={item.link} className={styles.sectionProjeto__cardWrapperConstruction__container__anchor__button} target="_blank" rel="noopener noreferrer">
+                                        <a href={item.git} className={styles.sectionProjeto__cardWrapperConstruction__container__anchor__button} target="_blank" rel="noopener noreferrer">
                                             Visualizar github
                                         </a>
                                     </div>  
@@ -131,8 +131,8 @@ export default function Projetos() {
                                         </a>
                                     </div>  
                                     <div className={styles.sectionProjeto__cardWrapper__container__anchor}>
-                                        <a href={item.link} className={styles.sectionProjeto__cardWrapper__container__anchor__button} target="_blank" rel="noopener noreferrer">
-                                            Visualizar projeto
+                                        <a href={item.git} className={styles.sectionProjeto__cardWrapper__container__anchor__button} target="_blank" rel="noopener noreferrer">
+                                            Visualizar github
                                         </a>
                                     </div>  
                                 </div>

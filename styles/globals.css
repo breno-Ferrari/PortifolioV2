@@ -46,3 +46,47 @@ html,body{
 	font-family: 'Roboto', sans-serif;
 	scroll-behavior: smooth;
 }
+body{
+	background-color: var(--bg-white);
+}
+
+body[data-theme="light"] {
+	--bg-white: hsl(207, 85%, 98%);
+	--bg-linear: hsl(195, 100%, 65%);
+	--border-bottom: hsl(195, 100%, 65%);
+	--bgfooter: hsl(195, 100%, 65%);
+	--arrowColor: hsl(195, 100%, 65%);
+	--texthighColor: hsl(195, 100%, 65%);
+	--barVisited: hsl(195, 100%, 65%);
+	--texthighColorDark: hsl(195, 100%, 65%);
+	--texthighColorDarker: hsl(195, 100%, 35%);
+	--underConstructionColor: hsl(42, 95% ,50%);
+	--underConstructionColorHover: hsl(42, 95% ,40%);
+	--bg-NavMobile:hsl(210, 6%, 14%);
+
+	--text-content-color:hsl(0, 0%, 0%);
+}
+
+body[data-theme="dark"] {
+
+	--bg-white:hsl(210, 6%, 14%);
+	--bg-linear: hsl(178, 100%, 45%);
+	
+	--border-bottom: hsl(178, 100%, 45%);
+	--bgfooter: hsl(178, 100%, 45%);
+	--var-text-footer:hsl(210, 6%, 14%);
+	--arrowColor: hsl(178, 100%, 45%);
+
+	--texthighColor: hsl(178, 100%, 45%);
+	--barVisited: hsl(178, 100%, 45%);
+
+	--texthighColorDark: hsl(178, 100%, 45%);
+	--texthighColorDarker: hsl(178, 100%, 35%);
+
+	--underConstructionColor: hsl(42, 95% ,50%);
+	--underConstructionColorHover: hsl(42, 95% ,40%);
+
+	--bg-NavMobile:hsl(210, 6%, 14%);
+	
+	--text-content-color:hsl(0, 0%, 80%);
+}

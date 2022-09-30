@@ -1,8 +1,8 @@
 .link{
     text-decoration: none;
     cursor:pointer;
-    color:hsl(195, 53%, 70%);
+    color:var(--texthighColor);
     &:hover{
-        color:hsl(195, 53%, 50%);
+        color:var(--texthighColorDark);
     }
 }

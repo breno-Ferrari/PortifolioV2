@@ -12,7 +12,7 @@
             border-radius: 3rem;
             width: 100%;
             //mexe na cor da esquerda
-            background-image: linear-gradient(hsl(195, 53%, 90%), hsl(195, 53%, 90%));
+            background-image: linear-gradient(var(--bg-linear), var(--bg-linear));
             background-repeat: no-repeat;
             
         }
@@ -25,10 +25,10 @@
             height: 1rem;
             width: 1rem;
             border-radius: 50%;
-            background: hsl(195, 53%, 60%);
+            background: var(--barVisited);
           
             // &:hover{
-            //     box-shadow: 1px 8px 30px hsl(195, 53%, 60%);
+            //     box-shadow: 1px 8px 30px var(--barVisited);
             //     transition: all 0.3s;
             // }
         }
@@ -41,7 +41,7 @@
             height: 1rem;
             width: 1rem;
             border-radius: 50%;
-            background: hsl(195, 53%, 60%);
+            background: var(--barVisited);
             background-size: 1.5rem;
         }
         // IE
@@ -53,7 +53,7 @@
             height: 1rem;
             width: 1rem;
             border-radius: 50%;
-            background: hsl(195, 53%, 60%);
+            background: var(--barVisited);
             background-size: 1.5rem;
         }
        

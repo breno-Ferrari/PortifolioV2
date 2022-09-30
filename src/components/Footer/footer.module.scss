@@ -1,5 +1,5 @@
 .footerSection{
-    background-color: hsl(195, 53%, 50%);
+    background-color: var(--bgfooter);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,6 @@
         font-size: clamp(1rem, 100%, 3rem);  
         // font-size: 
         text-align: center;
-        color: lightgray;
+        color: var(--var-text-footer);
     }
 }

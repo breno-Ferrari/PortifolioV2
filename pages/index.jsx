@@ -11,6 +11,8 @@ import AboutMe from "../src/components/AboutMe/aboutMe";
 import { useEffect, useState } from "react";
 export default function Home() {
   const [nav,setNav] = useState(true)
+ 
+
   useEffect(()=>{
     const windowSize = window.innerWidth
       if (windowSize >= 900) {
@@ -19,8 +21,7 @@ export default function Home() {
         setNav(true);
       }
   })
- 
-  
+
   return (
     <>
       {nav? <NavBarMobile />:<NavBar />}

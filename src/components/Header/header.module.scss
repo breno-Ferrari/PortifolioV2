@@ -6,8 +6,9 @@
     scroll-margin-top: 5.313rem;
     margin: 1.9rem auto 0rem auto;
     width: 95%;
-    border-bottom: 0.2rem solid hsl(195, 53%, 79%);
+    border-bottom: 0.2rem solid var(--border-bottom);
     height: 100vh;
+    color: var(--text-content-color);
     &__text{
         display:flex ;
         flex-direction: column;
@@ -22,7 +23,7 @@
         &__title{
             line-height: 3.1rem;
             width: 100%;
-            font-size: 3.7rem;
+            font-size: clamp(3.5rem,1vw, 6rem); 
             text-align: left;
             font-family: monospace;
             white-space: pre-line;
@@ -58,36 +59,37 @@
         align-items: center;
         &__arrow{
             &:after{
-                
                 position: relative;
-                top: -0.3rem;
+                top: -0.5rem;
                 background-color: transparent;
-                border: 0.2rem solid hsl(195, 53%, 59%);
+                border: 0.2rem solid var(--arrowColor);
                 border-left: 0;
                 border-top: 0;
                 content: "";
                 display: block;
-                height: 1.5rem;
+                height: 2rem;
                 transform: translate(0,0) rotate(45deg) ;
-                width: 1.5rem;
+                width: 2rem;
                 animation: floatArrow 3s ease-in-out infinite;
+                animation-delay: 0.2s;
             }
             &:before{
 
                 background-color: transparent;
-                border: 0.2rem solid hsl(195, 53%, 59%);
+                border: 0.2rem solid var(--arrowColor);
                 border-left: 0;
                 border-top: 0;
                 content: "";
                 display: block;
-                height: 1.6rem;
-                transform: translate(0,1.9rem) rotate(45deg) ;
-                width: 1.6rem;
+                height:2rem;
+                transform: translate(1rem) rotate(45deg) ;
+                width:2rem;
                 animation: floatArrow 3s ease-in-out infinite;
+                animation-delay: 0.3s;
             }
         }
         &__textArrow{
-            color:hsl(195, 53%, 70%);
+            color:var(--texthighColor);
             position: relative;
             top: -0.3rem;
             font-size: 0.9rem;
@@ -96,25 +98,9 @@
             width: 2.2rem;
             animation: floatText 3s ease-in-out infinite;
         }
-    }
-    
-    // @media (max-width:56.25rem){ //900px
-    //     height: 100vh;
-    // }
-    
+    }  
 }
 
-// @keyframes typing {
-//     0% {
-//         width: 0;
-//     }
-//     1%, 99%{
-//         border-right: 3px solid black;
-//     }
-//     100%{
-//         border-right: none;
-//     }
-// }
 
 @keyframes blink {
     from, to { color: transparent }
