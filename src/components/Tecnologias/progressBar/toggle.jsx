@@ -9,13 +9,13 @@ export default function ToggleSlide({valueField,children}){
 
   function getBackgroundSize(){
     return {
-      backgroundSize: `${(valueField * 100) / MAX}% 100%`
+      
     };
   };
 
   useEffect(()=>{
     if(effectRan.current === false){
-      getBackgroundSize()
+      getBackgroundSize
         return() =>{
             effectRan.current = true
         } 
