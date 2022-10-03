@@ -6,7 +6,7 @@ import ThemeToggle from "../ThemeToggle/themeToggle"
 
 import { BsGithub,BsLinkedin,BsFillFileEarmarkPdfFill } from "react-icons/bs";
 // outside library or react
-import { useEffect, useRef, useState } from "react"
+import { useLayoutEffect, useRef, useState } from "react"
 import gsap from "gsap"
 
 export default function NavBar() {
@@ -14,6 +14,14 @@ export default function NavBar() {
     const ref = useRef(new Array(NavText.length));
     const [list,setList] = useState("1")
     const [visible,setVisible] = useState(false)
+
+
+    const [activeTheme, setActiveTheme] = useState("light");
+    const inactiveTheme = activeTheme === "light" ? "dark" : "light";
+    useLayoutEffect(() => {
+        document.body.dataset.theme = activeTheme;
+      }, [activeTheme]);
+
 
     const tl = gsap.timeline()
     const listAnimation = () =>{  
@@ -66,7 +74,7 @@ export default function NavBar() {
               </ul>  
             </div>      
             <div className={styles.container__align__itens__right}>
-                <ThemeToggle className={styles.container__align__itens__right__linkedin}/>
+                <ThemeToggle id={"theme"} click={() => setActiveTheme(inactiveTheme)}/> 
                 <a href="/files/CV_BrenoVelosaFerrari.pdf " target="_blank" rel="noopener noreferrer" className={styles.container__align__itens__right__linkedin} alt="Download do curriculo em PDF" download><BsFillFileEarmarkPdfFill /></a>
                 <a href="https://bit.ly/3q4s0oL" target="_blank" rel="noreferrer" className={styles.container__align__itens__right__github} alt="Link para o gitHub"><BsGithub /></a>
                 <a href="https://bit.ly/3cIuTZe" target="_blank" rel="noreferrer" className={styles.container__align__itens__right__linkedin} alt="Link para o linkedin"><BsLinkedin /></a>

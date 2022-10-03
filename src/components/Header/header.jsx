@@ -7,7 +7,7 @@ import profilePic from "../../../public/asset/foto2.jpeg"
 
 export default function Header() {
     let textLength = 0;
-    let text = 'Olá, meu nome é Breno! Sou Desenvolvedor Front end \n Seja bem vindo ao meu portifolio.';
+    let text = `Olá, meu nome é Breno! Sou Desenvolvedor Front end \n Seja bem vindo ao meu portifolio.`;
     const effectRan = useRef(false)
     const title = useRef(false)
     

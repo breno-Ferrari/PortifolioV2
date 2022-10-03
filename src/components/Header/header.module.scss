@@ -104,7 +104,7 @@
 
 @keyframes blink {
     from, to { color: transparent }
-    50% { color: rgba(0, 0, 0) }
+    50% { color: var(--text-content-color) }
 }
 
 @keyframes floatArrow {

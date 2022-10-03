@@ -1,27 +1,56 @@
-.button{
-    --toggle-width: 60px;
-    --toggle-height: 20px;
-    --toggle-padding: -4px;
+.switch{
+    display:flex;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1rem;
-    line-height: 1;
-    width: var(--toggle-width);
-    height: var(--toggle-height);
-    padding: var(--toggle-padding);
-    border: 0.1rem solid var(--bg-linear);
-    border-radius: calc(var(--toggle-width) / 2);
-    cursor: pointer;
-    background: #c6c6c6;
-    &__toggleThumb{
-        position: absolute;
-        top: var(--toggle-padding);
-        left: var(--toggle-padding);
-        width: calc(var(--toggle-height) - (var(--toggle-padding) * 2));
-        height: calc(var(--toggle-height) - (var(--toggle-padding) * 2));
-        border-radius: 50%;
-        background: var(--bg-linear);
+    top: 1%;
+    color: var(--themeIcon-color);
+    &__input{
+        &[type=checkbox]{
+            // escode a box original
+            height: 0;
+            width: 0;
+            visibility: hidden; 
+            &:checked + label {
+                &:after{
+                    left: calc(100% - 4px);
+                    transform: translateX(-100%);
+                }
+            }
+        }
+        &:checked + label{
+            background-color: var(--themebg-checked);
+        }
+        
+    }
+    &__label{
+        cursor: pointer;
+        width: 50px;
+        height: 25px;
+        background:  var(--themebg); //fundo slider
+        border-radius: 24px;
+        position: relative;
+        transition: 0.3s;
+
+        &:after{
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 16px;
+            height: 16px;
+            background: var(--themethumb); //thumb
+            border-radius: 16px;
+            transition: 0.3s;
+            
+        }
+        &:hover{
+            background-color:var(--theme-hover);
+        }
+    }
+    &__span{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
     }
 }
+

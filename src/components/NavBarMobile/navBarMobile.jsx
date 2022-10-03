@@ -1,13 +1,14 @@
 import styles from "./navBarMobile.module.scss"
 import BarsMenu from "./bars/bars"
-import { useState ,useRef} from "react";
+import { useState ,useRef,useLayoutEffect} from "react";
 import NavTextMobile from "./const" 
 import Link from "../Link/link"
 import ThemeToggle from "../ThemeToggle/themeToggle"
 export default function NavBarMobile() {
     const [menu,setMenu] = useState(true);
     const ref = useRef(new Array(NavTextMobile.length));
-
+    const [activeTheme, setActiveTheme] = useState("light");
+    const inactiveTheme = activeTheme === "light" ? "dark" : "light";   
     function activeMenu(){
         let body = document.querySelector("body");
         if(menu === true){
@@ -18,6 +19,9 @@ export default function NavBarMobile() {
             body.style.overflow = "scroll";
         }
     }
+    useLayoutEffect(() => {
+        document.body.dataset.theme = activeTheme;
+      }, [activeTheme]);
 
     return (
         <section className={styles.container}>
@@ -29,7 +33,7 @@ export default function NavBarMobile() {
                 <div className={menu===true ? styles.container__navBar__sideMenu :styles.container__navBar__sideMenuActive}>
                     <ul className={styles.container__navBar__sideMenuActive__list}>
                         <div className={styles.container__navBar__sideMenuActive__list__burguer} onClick={activeMenu} >
-                            <ThemeToggle />
+                        <ThemeToggle id={"theme"} click={() => setActiveTheme(inactiveTheme)}/> 
                             <BarsMenu />
                            
                         </div>

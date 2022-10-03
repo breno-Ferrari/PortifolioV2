@@ -63,8 +63,16 @@ body[data-theme="light"] {
 	--underConstructionColor: hsl(42, 95% ,50%);
 	--underConstructionColorHover: hsl(42, 95% ,40%);
 	--bg-NavMobile:hsl(210, 6%, 14%);
-
+	
 	--text-content-color:hsl(0, 0%, 0%);
+
+	--themebg:hsl(195, 100%, 65%);
+	--themethumb:hsl(207, 85%, 98%);
+	--themeIcon-color:hsl(207, 85%, 98%);
+	--theme-hover:hsl(195, 100%, 35%);
+	--themebg-checked:hsl(210, 6%, 14%);
+	
+	
 }
 
 body[data-theme="dark"] {
@@ -89,4 +97,10 @@ body[data-theme="dark"] {
 	--bg-NavMobile:hsl(210, 6%, 14%);
 	
 	--text-content-color:hsl(0, 0%, 80%);
+
+	--themebg:hsl(178, 100%, 45%);
+	--themethumb:hsl(210, 6%, 14%);
+	--theme-hover:hsl(178, 100%, 25%);
+	--themebg-checked:hsl(178, 100%, 45%);
+	--themeIcon-color:hsl(210, 6%, 14%)
 }

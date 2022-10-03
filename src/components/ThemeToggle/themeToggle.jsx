@@ -1,20 +1,23 @@
+import React from "react";
 import styles from "./themeToggle.module.scss"
-import { useState,useEffect } from "react";
+import { BsFillMoonFill ,BsFillSunFill} from 'react-icons/bs';
 
 
-export default function ThemeToggle(){
-  const [activeTheme, setActiveTheme] = useState("light");
-  const inactiveTheme = activeTheme === "light" ? "dark" : "light";
-
-  useEffect(() => {
-    document.body.dataset.theme = activeTheme;
-  }, [activeTheme]);
-  
-  return (
-    <button className={styles.button} type="button" onClick={() => setActiveTheme(inactiveTheme)}>
-        <span className={styles.button__toggleThumb}></span>
-        <span>🌙</span>
-        <span>☀️</span>        
-    </button>
-  );
-};
+export default function toggleTheme({id,click}){
+  return ( 
+    <div className={styles.switch}>
+      <input type="checkbox" className={styles.switch__input} id={id} onClick={click}></input>
+      <label className={styles.switch__label} htmlFor={id} >
+      {id === "theme" ? 
+        <div className={styles.switch__span}>
+          <BsFillSunFill size={"12"}/>
+          <BsFillMoonFill size={"12"}/>
+        </div>
+         :
+         ""
+      }
+      </label>
+      
+    </div>
+  )
+} 
