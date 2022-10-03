@@ -6,7 +6,7 @@ import ThemeToggle from "../ThemeToggle/themeToggle"
 
 import { BsGithub,BsLinkedin,BsFillFileEarmarkPdfFill } from "react-icons/bs";
 // outside library or react
-import { useLayoutEffect, useRef, useState } from "react"
+import { useEffect,useLayoutEffect, useRef, useState } from "react"
 import gsap from "gsap"
 
 export default function NavBar() {
@@ -18,7 +18,9 @@ export default function NavBar() {
 
     const [activeTheme, setActiveTheme] = useState("light");
     const inactiveTheme = activeTheme === "light" ? "dark" : "light";
-    useLayoutEffect(() => {
+
+    // criar loadgin page e trocar para layout
+    useEffect(() => {
         document.body.dataset.theme = activeTheme;
       }, [activeTheme]);
 

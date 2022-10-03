@@ -1,6 +1,6 @@
+import { useState ,useRef, useEffect} from "react";
 import styles from "./navBarMobile.module.scss"
 import BarsMenu from "./bars/bars"
-import { useState ,useRef,useLayoutEffect} from "react";
 import NavTextMobile from "./const" 
 import Link from "../Link/link"
 import ThemeToggle from "../ThemeToggle/themeToggle"
@@ -21,7 +21,7 @@ export default function NavBarMobile() {
         }
     }
     
-    useLayoutEffect(() => {
+    useEffect(() => {
         document.body.dataset.theme = activeTheme;
       }, [activeTheme]);
 
