@@ -11,6 +11,7 @@ export default function NavBarMobile() {
     const inactiveTheme = activeTheme === "light" ? "dark" : "light";   
     function activeMenu(){
         let body = document.querySelector("body");
+
         if(menu === true){
             setMenu(false)
             body.style.overflow = "hidden";
@@ -19,6 +20,7 @@ export default function NavBarMobile() {
             body.style.overflow = "scroll";
         }
     }
+    
     useLayoutEffect(() => {
         document.body.dataset.theme = activeTheme;
       }, [activeTheme]);
@@ -26,16 +28,14 @@ export default function NavBarMobile() {
     return (
         <section className={styles.container}>
             <nav className={styles.container__navBar}>
-                <div className={menu===true ? styles.container__navBar__burguer :styles.container__navBar__burguerActive} onClick={activeMenu} >
-                    <BarsMenu />
-                    
-                </div>
+             
+                    <BarsMenu onClick={activeMenu} modal={menu}/>
+            
                 <div className={menu===true ? styles.container__navBar__sideMenu :styles.container__navBar__sideMenuActive}>
                     <ul className={styles.container__navBar__sideMenuActive__list}>
-                        <div className={styles.container__navBar__sideMenuActive__list__burguer} onClick={activeMenu} >
-                        <ThemeToggle id={"theme"} click={() => setActiveTheme(inactiveTheme)}/> 
-                            <BarsMenu />
-                           
+                        <div className={styles.container__navBar__sideMenuActive__list__burguer} >
+                            <ThemeToggle id={"theme"} click={() => setActiveTheme(inactiveTheme)}/> 
+                            <BarsMenu onClick={activeMenu} modal={menu}/>
                         </div>
                         {
                         NavTextMobile.map((item,i)=>(

@@ -10,11 +10,12 @@
     width: 100%;
     padding: 0px 1.8rem;
     transition: all 0.5s;
-    // &__burguerActive{
-    //   display: flex;
-    //   justify-content: flex-end;
-    //   transition: all 0.5s;
-    // }
+    &__active{
+      width: fit-content; 
+    }
+    &__disable{
+      width: fit-content;
+    }
     &__sideMenu{
       width: 100vw;
       height: 100vh;

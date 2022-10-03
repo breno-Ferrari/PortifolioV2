@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import Image from 'next/future/image'
 
 
-import profilePic from "../../../public/asset/foto2.jpeg"
+import profilePic from "../../../public/asset/foto2.png"
 
 export default function AboutMe() {
     return (
@@ -25,7 +25,7 @@ export default function AboutMe() {
                 </p> 
               </div>
              <div className={styles.sectionAboutMe__aboutMe__content__imageContainer}>
-                <Image src={profilePic} alt="Picture of the author" className={styles.sectionAboutMe__aboutMe__content__imageContainer__image}/> 
+                <Image src={profilePic} alt="ilustração" className={styles.sectionAboutMe__aboutMe__content__imageContainer__image}/> 
               </div> 
               
                
