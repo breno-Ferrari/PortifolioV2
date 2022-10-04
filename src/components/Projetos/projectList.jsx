@@ -1,6 +1,6 @@
 import { FaReact,FaSass } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
-import { SiNextdotjs,SiTypescript } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 
 const projectist = 
     [

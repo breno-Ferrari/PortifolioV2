@@ -1,13 +1,9 @@
 import styles from "./header.module.scss"
 import { useEffect, useRef } from "react";
-import Image from 'next/future/image'
-
-
-import profilePic from "../../../public/asset/foto2.jpeg"
 
 export default function Header() {
     let textLength = 0;
-    let text = `Olá, meu nome é Breno! Sou Desenvolvedor Front end \n Seja bem vindo ao meu portifolio.`;
+    let text = `Olá, meu nome é Breno!\n Sou Desenvolvedor Front-end \n Seja bem vindo ao meu portfólio.`;
     const effectRan = useRef(false)
     const title = useRef(false)
     

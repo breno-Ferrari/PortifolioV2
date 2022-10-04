@@ -11,9 +11,6 @@ import { Pagination, Navigation } from "swiper";
 
 import Image from "next/image";
 
-import { FaReact,FaSass } from "react-icons/fa";
-import { DiJavascript1 } from "react-icons/di";
-import { SiNextdotjs } from "react-icons/si";
 
 
 export default function Projetos() {   
@@ -66,7 +63,6 @@ export default function Projetos() {
                                 src={item.src} 
                                 height={200} 
                                 width={200} 
-                                // layout="responsive"
                                 className={styles.sectionProjeto__cardWrapperConstruction__imagePrev}>
                     
                                 </Image>
@@ -105,7 +101,6 @@ export default function Projetos() {
                                 src={item.src} 
                                 height={200} 
                                 width={200} 
-                                // layout="responsive"
                                 className={styles.sectionProjeto__cardWrapper__imagePrev}>
                     
                                 </Image>

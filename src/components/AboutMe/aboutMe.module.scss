@@ -8,7 +8,6 @@
     &__aboutMe{
         &__title{
             display: inline-block;
-            // font-size: 40px;
             font-size: clamp(2.5rem,1vw, 3rem); 
             padding-bottom: 0.3rem;
             border-bottom: 0.125rem solid var(--border-bottom);
@@ -25,12 +24,11 @@
                     font-size: clamp(1.2rem, 1vw, 2rem); 
                     line-height: 2rem;
                     margin: 1rem 0rem;
-                    @media (max-width:56.25rem){ //900px
-                        // font-size: 22px;
+                    @media (max-width:56.25rem){
                         font-size: clamp(1.2rem, 50%, 2.7rem);  
                      }
                 }
-                @media (max-width:56.25rem){ //900px
+                @media (max-width:56.25rem){
                    width: 95%; 
                 }
             }
@@ -45,14 +43,14 @@
                 height: 19rem;
                }
             }
-           @media (max-width:56.25rem){ //900px
+           @media (max-width:56.25rem){ 
                 flex-direction: column-reverse; 
                 &__imageContainer{
                     padding-top: 30px;
                 }
             }
         }
-        @media (max-width:56.25rem){ //900px
+        @media (max-width:56.25rem){ 
             flex-direction: column-reverse;
             text-align: center;
         }

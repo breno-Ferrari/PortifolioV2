@@ -3,7 +3,6 @@
     margin: 1.9rem auto 0rem auto;
     width: 95%;
     color: var(--text-content-color);
-    // border-bottom: 0.2rem solid var(--border-bottom);
     &__containerTitle{
         display: flex;
         justify-content: left;
@@ -15,7 +14,7 @@
             border-bottom: 0.2rem solid var(--border-bottom);
         }
         
-         @media (max-width:56.25rem){ //900px
+         @media (max-width:56.25rem){ 
             display: flex;
             justify-content: center;
             width: 100%;
@@ -37,7 +36,7 @@
         border-radius: 1.5rem;
         overflow: hidden;
         max-height: 31rem;
-         @media (max-width:56.25rem){ //900px
+         @media (max-width:56.25rem){ 
             display: flex;
             flex-direction: column;
             border: 0.2rem solid var(--border-bottom);
@@ -51,7 +50,7 @@
         &__imagePrev{
             border: 0.6rem solid var(--border-bottom);
            
-             @media (max-width:56.25rem){ //900px
+             @media (max-width:56.25rem){ 
                 min-height: 12.5rem
             }
         }
@@ -106,7 +105,7 @@
                 }
                
             }
-            @media (max-width:56.25rem){ //900px
+            @media (max-width:56.25rem){ 
                 display: flex;
                 flex-direction: column;
                 width: 100%;
@@ -126,7 +125,7 @@
         border-radius: 1.5rem;
         overflow: hidden;
         max-height: 31rem;
-        @media (max-width:56.25rem){ //900px
+        @media (max-width:56.25rem){ 
             display: flex;
             flex-direction: column;
             border: 0.2rem dashed var(--underConstructionColor);
@@ -139,10 +138,6 @@
         }
         &__imagePrev{
             border: 0.6rem dashed red;
-            // width: fit-content;
-            //  @media (max-width:56.25rem){ //900px
-            //     min-height: 15rem;
-            // }
         }
         &__projectTitle{
             display: flex;
@@ -198,7 +193,7 @@
                 }
                
             }
-            @media (max-width:56.25rem){ //900px
+            @media (max-width:56.25rem){ 
                 display: flex;
                 flex-direction: column;
                 width: 100%;

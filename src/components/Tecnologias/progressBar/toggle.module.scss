@@ -13,7 +13,6 @@
             background: var(--bg-pos);
             border-radius: 3rem;
             width: 100%;
-            //mexe na cor da esquerda
             background-image: linear-gradient(var(--bg-pre), var(--bg-pre));
             background-repeat: no-repeat;
             
@@ -28,11 +27,6 @@
             width: 1rem;
             border-radius: 50%;
             background: var(--barVisited);
-          
-            // &:hover{
-            //     box-shadow: 1px 8px 30px var(--barVisited);
-            //     transition: all 0.3s;
-            // }
         }
         // mozila
         &[type=range]::-moz-range-thumb {

@@ -1,5 +1,4 @@
-import styles from "./footer.module.scss"
-import { AiOutlineCopyright } from "react-icons/ai";
+import styles from "./footer.module.scss";
 
 export default function Footer() {
     return (

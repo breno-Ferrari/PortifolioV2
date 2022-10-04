@@ -53,8 +53,10 @@ body{
 body[data-theme="light"] {
 	--bg-white: hsl(207, 85%, 98%);
 	--bg-linear: hsl(195, 100%, 65%);
+
 	--bg-pre: hsl(195, 100%, 65%);
 	--bg-pos: hsl(195, 100%, 90%);
+
 	--border-bottom: hsl(195, 100%, 65%);
 	--navBar-color-itens: hsl(195, 100%, 65%);
 	--bgfooter: hsl(195, 100%, 65%);
@@ -80,6 +82,10 @@ body[data-theme="light"] {
 body[data-theme="dark"] {
 	--bg-white:hsl(210, 6%, 14%);
 	--bg-linear: hsl(178, 100%, 45%);
+
+	--bg-pre: hsl(178, 100%, 45%);
+	--bg-pos: hsl(195, 100%, 90%);
+
 	--border-bottom: hsl(178, 100%, 45%);
 	--navBar-color-itens: hsl(178, 100%, 45%);
 	--bgfooter: hsl(178, 100%, 45%);
@@ -103,6 +109,7 @@ body[data-theme="dark"] {
 	--swiper-color:hsl(178, 100%, 45%);
 }
 
+/* troca de cores do slider */
 .swiper .swiper-button-prev{
 	color: var(--swiper-color);
 }

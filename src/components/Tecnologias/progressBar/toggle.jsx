@@ -1,10 +1,9 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import styles from "./toggle.module.scss"
 
 
 export default function ToggleSlide({valueField,children}){
   const effectRan = useRef(false)
-  const [field, setField] = useState(0);
   const MAX = 100;
 
   function getBackgroundSize(){
@@ -23,6 +22,7 @@ export default function ToggleSlide({valueField,children}){
         } 
     }
    },[])
+   
   return ( 
     <div className={styles.container} id="slider">
        <input
@@ -30,7 +30,6 @@ export default function ToggleSlide({valueField,children}){
         type="range"
         min="1"
         max={MAX}
-        // onChange={(e) => setField(e.target.valueAsNumber)}
         style={getBackgroundSize()}
         value={valueField}
         readOnly

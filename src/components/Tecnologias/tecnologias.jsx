@@ -1,6 +1,5 @@
 import styles from "./tecnologias.module.scss"
 import Tec from "./tec"
-import {useState} from "react"
 import ToggleSlide from "./progressBar/toggle"
 
 export default function Tecnologias() {
@@ -24,8 +23,9 @@ export default function Tecnologias() {
                                     {item.Content1}
                                 </p>
                                 <div className={styles.tec__tecnologias__row__item__content__bar}>
-                                    <ToggleSlide valueField={item.Know} defaultValue={0}/>
-                                    <p  className={styles.tec__tecnologias__row__item__content__bar__text}>{item.Know}%</p>
+                                
+                                    <ToggleSlide valueField={item.Know1} defaultValue={0}/>
+                                    <p  className={styles.tec__tecnologias__row__item__content__bar__text}>{item.Know1}%</p>
                                 </div>
                                 
                             </div>
@@ -42,8 +42,8 @@ export default function Tecnologias() {
                                     {item.Content2}
                                 </p>
                                 <div className={styles.tec__tecnologias__row__item__content__bar}>
-                                    <ToggleSlide valueField={item.Know} defaultValue={0}/>
-                                    <p  className={styles.tec__tecnologias__row__item__content__bar__text}>{item.Know}%</p>
+                                    <ToggleSlide valueField={item.Know2} defaultValue={0}/>
+                                    <p  className={styles.tec__tecnologias__row__item__content__bar__text}>{item.Know2}%</p>
                                 </div>
                             </div>
                             

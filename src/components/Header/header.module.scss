@@ -34,7 +34,7 @@
                 line-height: 3.1rem;
                 animation: blink 0.5s step-end infinite alternate;
             }
-            @media (max-width:56.25rem){ //900px
+            @media (max-width:56.25rem){ 
                 font-size: 1.875rem;
                 &::after{
                     content: "|";
@@ -46,7 +46,7 @@
         }
         &__prev{
             font-size: 1.9rem;
-            @media (max-width:25rem) {//400px
+            @media (max-width:25rem) {
                 font-size: 1.3rem;
             }
         }

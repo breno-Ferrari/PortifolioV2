@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useLayoutEffect, useRef } from "react"
+import { useRef } from "react"
 import styles from "./bars.module.scss"
 
 
