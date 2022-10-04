@@ -83,10 +83,10 @@
         }
         &__container{
             display: flex;
+            justify-content: center;
             padding: 1.25rem;
             gap: 1rem;
             &__anchor{
-                width: 50%;
                 &__button{
                     display: flex;
                     justify-content: center;
@@ -98,6 +98,7 @@
                     text-decoration: none;
                     color: var(--texthighColorDark);
                     cursor: pointer;
+                    padding: 0.2rem;
                     &:hover{
                         color: var(--texthighColorDarker);
                         border: 0.2rem solid var(--texthighColorDarker) ;

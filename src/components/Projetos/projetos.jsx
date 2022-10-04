@@ -125,11 +125,15 @@ export default function Projetos() {
                                     {item.tec4}
                                 </div>
                                 <div className={styles.sectionProjeto__cardWrapper__container}>
-                                    <div className={styles.sectionProjeto__cardWrapper__container__anchor}>
-                                        <a href={item.link} className={styles.sectionProjeto__cardWrapper__container__anchor__button} target="_blank" rel="noopener noreferrer">
-                                            Visualizar projeto
-                                        </a>
-                                    </div>  
+                                    {item.link ? 
+                                          <div className={styles.sectionProjeto__cardWrapper__container__anchor}>
+                                          <a href={item.link} className={styles.sectionProjeto__cardWrapper__container__anchor__button} target="_blank" rel="noopener noreferrer">
+                                              Visualizar projeto
+                                          </a>
+                                      </div>  
+                                      :""
+                                    }
+                                  
                                     <div className={styles.sectionProjeto__cardWrapper__container__anchor}>
                                         <a href={item.git} className={styles.sectionProjeto__cardWrapper__container__anchor__button} target="_blank" rel="noopener noreferrer">
                                             Visualizar github

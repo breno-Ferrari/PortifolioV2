@@ -53,6 +53,8 @@ body{
 body[data-theme="light"] {
 	--bg-white: hsl(207, 85%, 98%);
 	--bg-linear: hsl(195, 100%, 65%);
+	--bg-pre: hsl(195, 100%, 65%);
+	--bg-pos: hsl(195, 100%, 90%);
 	--border-bottom: hsl(195, 100%, 65%);
 	--navBar-color-itens: hsl(195, 100%, 65%);
 	--bgfooter: hsl(195, 100%, 65%);
@@ -72,12 +74,14 @@ body[data-theme="light"] {
 	--theme-hover:hsl(195, 100%, 35%);
 	--themebg-checked:hsl(210, 6%, 14%);
 
+	--swiper-color:hsl(195, 100%, 65%);
 }
 
 body[data-theme="dark"] {
 	--bg-white:hsl(210, 6%, 14%);
 	--bg-linear: hsl(178, 100%, 45%);
 	--border-bottom: hsl(178, 100%, 45%);
+	--navBar-color-itens: hsl(178, 100%, 45%);
 	--bgfooter: hsl(178, 100%, 45%);
 	--var-text-footer:hsl(210, 6%, 14%);
 	--arrowColor: hsl(178, 100%, 45%);
@@ -95,4 +99,16 @@ body[data-theme="dark"] {
 	--theme-hover:hsl(178, 100%, 25%);
 	--themebg-checked:hsl(178, 100%, 45%);
 	--themeIcon-color:hsl(210, 6%, 14%);
+
+	--swiper-color:hsl(178, 100%, 45%);
+}
+
+.swiper .swiper-button-prev{
+	color: var(--swiper-color);
+}
+.swiper .swiper-button-next{
+	color: var(--swiper-color);
+}
+.swiper .swiper-pagination .swiper-pagination-bullet-active{
+	background: var(--swiper-color);
 }

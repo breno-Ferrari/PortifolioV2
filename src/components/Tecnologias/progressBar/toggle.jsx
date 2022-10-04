@@ -4,24 +4,25 @@ import styles from "./toggle.module.scss"
 
 export default function ToggleSlide({valueField,children}){
   const effectRan = useRef(false)
-
+  const [field, setField] = useState(0);
   const MAX = 100;
 
   function getBackgroundSize(){
     return {
-      
+      backgroundSize: `${(valueField * 100) / MAX}% 100%`
+
     };
   };
 
+
   useEffect(()=>{
     if(effectRan.current === false){
-      getBackgroundSize
+      getBackgroundSize()
         return() =>{
             effectRan.current = true
         } 
     }
    },[])
-
   return ( 
     <div className={styles.container} id="slider">
        <input

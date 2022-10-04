@@ -24,8 +24,20 @@ const projectist =
         tec2: <FaSass />,
         tec3: <DiJavascript1 />,
         tec4: <SiNextdotjs />,
-        site:"https://cardapio-breno-ferrari.vercel.app/",
+        link:"https://cardapio-breno-ferrari.vercel.app/",
         git:"https://github.com/breno-Ferrari/Cardapio",
+        build:false
+      },
+      {
+        titulo:"Portifolio",
+        preview:"Portifolio profissional onde utilizo e estudos bibliotecas dentro outras tecnologias.",
+        src:"/asset/portifolio.png",
+        tec1: <SiNextdotjs />,
+        tec2: <FaReact />,
+        tec3: <DiJavascript1 />,
+        tec4: <FaSass />,
+        link:false,
+        git:"https://github.com/breno-Ferrari/PortifolioV2",
         build:false
       },
       {
