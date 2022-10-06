@@ -1,6 +1,8 @@
 import styles from "./aboutMe.module.scss"
-import Image from 'next/future/image'
+// import Image from 'next/future/image'
 import profilePic from "../../../public/asset/foto2.png"
+
+import Image from "next/image"
 
 export default function AboutMe() {
     return (
@@ -22,7 +24,8 @@ export default function AboutMe() {
                 </p> 
               </div>
              <div className={styles.sectionAboutMe__aboutMe__content__imageContainer}>
-                <Image src={profilePic} alt="ilustração" className={styles.sectionAboutMe__aboutMe__content__imageContainer__image}/> 
+                <Image src={profilePic} alt="ilustração" height={300}
+                width={300} /> 
               </div> 
             </div>
         </div>
