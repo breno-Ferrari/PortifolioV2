@@ -15,10 +15,17 @@ export default function BarsMenu({modal,...props}) {
       ref3.current?.classList.toggle(`${styles.container__change__bar3}`)      
     }
 
+    useEffect(()=>{
+      if(modal === true){
+        CreateX();
+        console.log("teste");
+      }
+     
+    },[modal])
 
     return (
 
-          <div className={styles.container} onChange={CreateX()} {...props}>
+          <div className={styles.container} {...props}>
             <div className={styles.bar1} ref={ref1}></div>
             <div className={styles.bar2} ref={ref2}></div>
             <div className={styles.bar3} ref={ref3}></div>
