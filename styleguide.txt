@@ -1,0 +1,6 @@
+ligth mode:
+texts:#fff
+borders:#2A6F97
+sidebarbg:#012A4A
+
+bglinear:#61A5C2 - #A9D6E5

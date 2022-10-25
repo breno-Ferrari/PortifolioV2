@@ -9,6 +9,7 @@ import NavBar from "../src/components/NavBar/navBar";
 import NavBarMobile from "../src/components/NavBarMobile/navBarMobile";
 import AboutMe from "../src/components/AboutMe/aboutMe";
 import { useEffect, useState } from "react";
+import Habilidades from "../src/components/Habilidades/habilidades";
 export default function Home() {
   const [nav,setNav] = useState(true)
  
@@ -27,7 +28,8 @@ export default function Home() {
       {nav? <NavBarMobile />:<NavBar />}
       <Header />
       <AboutMe />
-      <Tecnologias />
+      <Habilidades />
+      {/* <Tecnologias /> */}
       <Projetos />
       <Footer />
     </>
