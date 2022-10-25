@@ -17,8 +17,11 @@ export default function Habilidades() {
                 </div>
                 <div className={styles.habilidades__container__rigth}>
                 {Tec.map((item,index)=>(
-                    <div className={styles.habilidades__container__rigth__bar} key={index}>  
-                        <p className={styles.habilidades__container__rigth__bar__title}>{item.Title}</p>
+                    <div className={styles.habilidades__container__rigth__bar} key={index}>
+                        <div className={styles.habilidades__container__rigth__bar__stacks}>
+                            <p className={styles.habilidades__container__rigth__bar__stacks__stack}>{item.Icon}</p>
+                            <p className={styles.habilidades__container__rigth__bar__stacks__stack}>{item.Title}</p>
+                        </div>  
                         <ToggleSlide value={item.Know}/>
                     </div>
                 ))}
