@@ -1,6 +1,5 @@
 import styles from "./sobreMim.module.scss"
 // import Image from 'next/future/image'
-import { motion } from "framer-motion"
 import profilePic from "../../../public/asset/foto2.png"
 import { useEffect,useRef } from "react"
 import { useInView } from "framer-motion";
