@@ -34,7 +34,7 @@ export default function Header() {
         <div className={styles.sectionHeader__text}>
             <h1 className={styles.sectionHeader__text__title} ref={title}></h1>
         </div>
-        <a href="#aboutMe" className={styles.sectionHeader__arrowContainer}>
+        <a href="#sobreMim" className={styles.sectionHeader__arrowContainer}>
           <div className={styles.sectionHeader__arrowContainer__arrow}></div>
           <p className={styles.sectionHeader__arrowContainer__textArrow}>
             scroll down

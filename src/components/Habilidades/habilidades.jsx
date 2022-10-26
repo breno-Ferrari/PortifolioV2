@@ -1,9 +1,22 @@
 import styles from "./habilidades.module.scss"
 import Tec from "./skills"
 import ToggleSlide from "./progressBar/toggle"
+import { useEffect } from "react"
 
 export default function Habilidades() {
-
+    useEffect(() => {
+        let box = document.querySelector("#habilidades");
+        let observer = new IntersectionObserver(enteries =>{
+          enteries.forEach(entry=>{
+            if(entry.isIntersecting){
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateX(0)";
+    
+            }
+          })
+        })
+        observer.observe(box)
+      },[]);
     return (
       <section className={styles.habilidades} id="habilidades">
             <div className={styles.habilidades__container}>

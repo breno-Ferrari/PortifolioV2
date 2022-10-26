@@ -1,10 +1,26 @@
 import styles from "./aboutMe.module.scss"
 // import Image from 'next/future/image'
 import profilePic from "../../../public/asset/foto2.png"
-
+import { useEffect } from "react"
 import Image from "next/image"
 
 export default function AboutMe() {
+  
+
+  useEffect(() => {
+    let box = document.querySelector("#aboutMe");
+    let observer = new IntersectionObserver(enteries =>{
+      enteries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateX(0)";
+
+        }
+      })
+    })
+    observer.observe(box)
+  },[]);
+    
     return (
       <section className={styles.sectionAboutMe} id="aboutMe">
         <div className={styles.sectionAboutMe__aboutMe}>
