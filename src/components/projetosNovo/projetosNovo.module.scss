@@ -2,13 +2,12 @@
     scroll-margin-top: 5.313rem;
     margin: 1.9rem auto 0rem auto;
     width: 95%;
-    height: 100vh; 
+    height: 100%; 
     overflow: hidden; 
     &__container{
         display: flex;
         align-items: center;
         width: 100%;
-        padding-bottom: 1.9rem;
         &__top{
             width: 100%;
             display: flex;
@@ -31,14 +30,14 @@
         &__bottom{
             display: flex;
             position: relative;
-            width: fit-content;
-            min-height: 17rem;
-            height: fit-content;
-            border: 0.1rem solid var(--border-bottom);
-            // width: 70%;
+            border: 0.2rem solid var(--border-bottom);
+            border-radius: 0.5rem;
+            margin: 1rem 0rem;
+       
             &__card{
                 display: flex;
                 width: 100%;
+                overflow: hidden;
                 &__content{
                     display: flex;
                     flex-direction: column;
@@ -46,7 +45,7 @@
                     width: 100%;
                     &__title{
                         padding: 1rem;
-                        font-size: clamp(2rem,1vw, 4rem); 
+                        font-size: clamp(2.5rem,1vw, 4rem); 
                     }
                     &__description{
                         padding: 1rem;
@@ -61,18 +60,44 @@
                         font-size: clamp(2rem,1vw, 3rem); 
                         color: var(--text-content-color);
                     }
+                    &__buttons{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        margin: 2rem;
+                        width: 100%;
+                        &__btn{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            border: 0.1rem solid var(--texthighColorDark) ;
+                            height: 2rem;
+                            border-radius: 0.5rem;
+                            font-size: clamp(1rem, 1vw, 2rem); 
+                            text-decoration: none;
+                            color: var(--text-content-color);
+                            background-color:var(--texthighColorDark);
+                            padding: 1rem;
+                            // width: 20%;
+                        }
+                    }
                 }
              
                 &__image{
-                    width: 40%;
-                    border-left: 0.1rem solid var(--border-bottom);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     border-right: 0.1rem solid var(--border-bottom);
+                    background-color: #FFFFFF;
                 }
                 &__arrow{
                     cursor: pointer;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    width: 4rem;
+                    border-radius: 0rem 1rem 1rem 0rem;
                     &__teste1{
                         display: flex;
                         animation: floatArrow 3s ease-in-out infinite;
@@ -113,12 +138,12 @@
 
 @keyframes floatArrow {
     0% {   
-        transform: translate(-6px, 0px) rotate(180deg) ;
+        transform: translate(-4px, 0px) rotate(180deg) ;
     }
     50%  {  
-        transform: translate(4px, 0px) rotate(180deg) ;
+        transform: translate(2px, 0px) rotate(180deg) ;
     }
     100%   { 
-        transform: translate(-6px, 0px) rotate(180deg) ;
+        transform: translate(-4px, 0px) rotate(180deg) ;
     }   
 }

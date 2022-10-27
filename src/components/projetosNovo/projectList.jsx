@@ -6,7 +6,7 @@ const projectist =
     [
       {
         titulo:"Preço interativo",
-        preview:"Projeto utilizado para estudos do nextJs, Css3 e Javascript",
+        preview:"Um simples card onde é utilizei para estudar css e algumas features do react,onde o foco ficou para o slider e meu primeiro darkMode.",
         src:"/asset/interactivecard.png",
         tec1: <SiNextdotjs />,
         tec2: <FaReact />,
@@ -16,30 +16,30 @@ const projectist =
         git:"https://github.com/breno-Ferrari/Interactive-price",
         build:false
       },
-      // {
-      //   titulo:"Cardapio",
-      //   preview:"Cardapio interativo feito em React para estudos de React, Css3 e JS",
-      //   src:"/asset/Cardapio.png",
-      //   tec1: <FaReact />,
-      //   tec2: <FaSass />,
-      //   tec3: <DiJavascript1 />,
-      //   tec4: <SiNextdotjs />,
-      //   link:"https://cardapio-breno-ferrari.vercel.app/",
-      //   git:"https://github.com/breno-Ferrari/Cardapio",
-      //   build:false
-      // },
-      // {
-      //   titulo:"Portifolio",
-      //   preview:"Portifolio profissional onde utilizo e estudos bibliotecas dentro outras tecnologias.",
-      //   src:"/asset/portifolio.png",
-      //   tec1: <SiNextdotjs />,
-      //   tec2: <FaReact />,
-      //   tec3: <DiJavascript1 />,
-      //   tec4: <FaSass />,
-      //   link:false,
-      //   git:"https://github.com/breno-Ferrari/PortifolioV2",
-      //   build:false
-      // },
+      {
+        titulo:"Cardapio",
+        preview:"Cardapio interativo feito em React para estudos de React, Css3 e JS",
+        src:"/asset/Cardapio.png",
+        tec1: <FaReact />,
+        tec2: <FaSass />,
+        tec3: <DiJavascript1 />,
+        tec4: <SiNextdotjs />,
+        link:"https://cardapio-breno-ferrari.vercel.app/",
+        git:"https://github.com/breno-Ferrari/Cardapio",
+        build:false
+      },
+      {
+        titulo:"Portifolio",
+        preview:"Portifolio profissional onde utilizo e estudos bibliotecas dentro outras tecnologias.",
+        src:"/asset/portifolio.png",
+        tec1: <SiNextdotjs />,
+        tec2: <FaReact />,
+        tec3: <DiJavascript1 />,
+        tec4: <FaSass />,
+        link:"https://github.com/breno-Ferrari/PortifolioV2",
+        git:"https://github.com/breno-Ferrari/PortifolioV2",
+        build:false
+      },
       // {
       //   titulo:"Em desenvolvimento",
       //   preview:"Em desenvolvimento",
