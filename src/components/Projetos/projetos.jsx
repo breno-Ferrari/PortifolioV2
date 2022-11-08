@@ -39,9 +39,13 @@ export default function Projetos() {
     return (
         <section className={styles.sectionProjeto} id="projetos">
             <div className={styles.sectionProjeto__containerTitle}>
-                <h2 className={styles.sectionProjeto__containerTitle__title}>Projetos</h2>    
+                <p className={styles.sectionProjeto__containerTitle__text} >
+                    Essas são alguns dos 
+                </p>
+                <p className={styles.sectionProjeto__containerTitle__text}>
+                    meus projetos
+                </p>
             </div>
-            
             <Swiper
                 slidesPerView={size}
                 slidesPerGroup={1}
@@ -59,7 +63,7 @@ export default function Projetos() {
                         {item.build ? 
                             <div className={styles.sectionProjeto__cardWrapperConstruction} >
                                 <Image 
-                                alt="header" 
+                                alt="gif de uma trator dormindo" 
                                 src={item.src} 
                                 height={200} 
                                 width={200} 
@@ -97,7 +101,7 @@ export default function Projetos() {
                         :
                             <div className={styles.sectionProjeto__cardWrapper} >
                                 <Image 
-                                alt="header" 
+                                alt="miniatura Home"
                                 src={item.src} 
                                 height={200} 
                                 width={200} 

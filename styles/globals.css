@@ -110,6 +110,7 @@ body[data-theme="dark"] {
 	--swiper-color:hsl(178, 100%, 45%);
 }
 
+
 /* troca de cores do slider */
 .swiper .swiper-button-prev{
 	color: var(--swiper-color);

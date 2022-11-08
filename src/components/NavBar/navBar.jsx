@@ -65,7 +65,8 @@ export default function NavBar() {
               <ul className={styles.container__align__itens__left__list}>
                 {
                   NavText.map((item,i)=>(
-                    <li className={styles.container__align__itens__left__list__line} key={i} ref={(el) => (ref.current[i] = el)} >
+                    <li className={styles.container__align__itens__left__list__line} key={i} 
+                    ref={(el) => (ref.current[i] = el)} >
                       {visible ?   
                         <Link href={item.href}>
                             {item.value}

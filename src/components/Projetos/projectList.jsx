@@ -41,6 +41,18 @@ const projectist =
         build:false
       },
       {
+        titulo:"Gerador de senha",
+        preview:"Um gerador de senha com niveis de segurança, feito com algumas das novas funcionalidades do Next 13",
+        src:"/asset/senha.png",
+        tec1: <SiNextdotjs />,
+        tec2: <FaReact />,
+        tec3: <DiJavascript1 />,
+        tec4: <FaSass />,
+        link:"https://password-generator-breno-ferrari.vercel.app/",
+        git:"https://github.com/breno-Ferrari/passwordGenerator",
+        build:false
+      },
+      {
         titulo:"Em desenvolvimento",
         preview:"Em desenvolvimento",
         src:"/asset/bulldozer.gif",
