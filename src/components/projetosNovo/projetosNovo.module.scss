@@ -3,11 +3,10 @@
     margin: 1.9rem auto 0rem auto;
     width: 95%;
     height: 100%; 
-    overflow: hidden; 
+    // overflow: hidden; 
     &__container{
         display: flex;
         align-items: center;
-        width: 100%;
         &__top{
             width: 100%;
             display: flex;
@@ -30,10 +29,11 @@
         &__bottom{
             display: flex;
             position: relative;
+            left: -75%;
             border: 0.2rem solid var(--border-bottom);
             border-radius: 0.5rem;
             margin: 1rem 0rem;
-       
+            max-height: 250px;
             &__card{
                 display: flex;
                 width: 100%;
@@ -43,13 +43,14 @@
                     flex-direction: column;
                     justify-content: space-around;
                     width: 100%;
+                    padding: 1rem;
                     &__title{
-                        padding: 1rem;
-                        font-size: clamp(2.5rem,1vw, 4rem); 
+                        font-size: clamp(2rem,1vw, 4rem); 
+                        color: var(--text-content-color);  
                     }
                     &__description{
-                        padding: 1rem;
-                        font-size: clamp(1.5rem,1vw, 3rem); 
+                        font-size: clamp(1.2rem,1vw, 2.4rem); 
+                        color: var(--text-content-color);  
                     }
                     &__tecs{
                         display: flex;
@@ -57,7 +58,7 @@
                         justify-content: space-evenly;
                         padding: 1.25rem;
                         width: 100%;
-                        font-size: clamp(2rem,1vw, 3rem); 
+                        font-size: clamp(1.5rem,1vw, 3rem); 
                         color: var(--text-content-color);
                     }
                     &__buttons{
@@ -76,10 +77,9 @@
                             border-radius: 0.5rem;
                             font-size: clamp(1rem, 1vw, 2rem); 
                             text-decoration: none;
-                            color: var(--text-content-color);
+                            color: fff;  
                             background-color:var(--texthighColorDark);
                             padding: 1rem;
-                            // width: 20%;
                         }
                     }
                 }
@@ -90,14 +90,15 @@
                     align-items: center;
                     border-right: 0.1rem solid var(--border-bottom);
                     background-color: #FFFFFF;
+                    width: 400px;
                 }
-                &__arrow{
+                &__arrowclose{
                     cursor: pointer;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 4rem;
                     border-radius: 0rem 1rem 1rem 0rem;
+                    width: 150px;
                     &__teste1{
                         display: flex;
                         animation: floatArrow 3s ease-in-out infinite;
@@ -113,10 +114,8 @@
                             height: 2rem;
                             transform: translate(0,0.1rem) rotate(135deg) ;
                             width: 2rem;
-                           
                         }
                         &:before{
-
                             background-color: transparent;
                             border: 0.2rem solid var(--arrowColor);
                             border-left: 0;
@@ -130,6 +129,9 @@
                             bottom: 0.4rem;
                         }
                     }
+                }
+                &__text{
+                   display: inline-block;
                 }
             }
         }
