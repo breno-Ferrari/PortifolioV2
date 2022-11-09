@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import Habilidades from "../src/components/Habilidades/habilidades";
 import SobreMim from "../src/components/sobreMim/sobreMim";
 import Projetos from "../src/components/projetos/projetos";
-// import ProjetosCard from "../src/components/ProjetosCard/ProjetosCard";
 export default function Home() {
   const [nav,setNav] = useState(true)
  

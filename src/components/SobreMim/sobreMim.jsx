@@ -1,7 +1,7 @@
 import styles from "./sobreMim.module.scss"
 // import Image from 'next/future/image'
 import profilePic from "../../../public/asset/foto2.png"
-import { useEffect,useRef } from "react"
+import { useRef } from "react"
 import { useInView } from "framer-motion";
 import Image from "next/image"
 
