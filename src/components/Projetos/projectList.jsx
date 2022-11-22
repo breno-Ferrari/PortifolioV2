@@ -1,6 +1,6 @@
 import { FaReact,FaSass } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs,SiRedux,SiTypescript } from "react-icons/si";
 
 const projectist = 
     [
@@ -46,10 +46,22 @@ const projectist =
         src:"/asset/senha.png",
         tec1: <SiNextdotjs />,
         tec2: <FaReact />,
-        tec3: <DiJavascript1 />,
+        tec3: <SiTypescript />,
         tec4: <FaSass />,
         link:"https://password-generator-breno-ferrari.vercel.app/",
         git:"https://github.com/breno-Ferrari/passwordGenerator",
+        build:false
+      },
+      {
+        titulo:"E-commerce",
+        preview:"Loja e-commerce feita com react e reduz para gerenciamento de estados globais e a biblioteca 'react router dom' para gerenciamento de rotas",
+        src:"/asset/ecommerce.png",
+        tec1: <FaReact />,
+        tec2: <SiRedux />,
+        tec3: <DiJavascript1 />,
+        tec4: <FaSass />,
+        link:"https://ecommerce-breno-ferrari.vercel.app/",
+        git:"https://github.com/breno-Ferrari/ecommerce",
         build:false
       },
       {
