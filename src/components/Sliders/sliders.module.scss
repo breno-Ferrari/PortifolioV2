@@ -9,9 +9,12 @@
         scroll-behavior: smooth;
         align-items: center;
         text-align: center;
-        gap: 2rem;
+        gap: 5rem;
         &::-webkit-scrollbar{
             display: none;
+        }
+        @media (max-width:56.25rem){ 
+            max-width: 67vw;
         }
     }
     &__arrow{

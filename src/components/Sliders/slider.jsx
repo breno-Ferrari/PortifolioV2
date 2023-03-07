@@ -3,21 +3,21 @@ import styles from "./sliders.module.scss"
 
 export default function Sliders({children,setId}) {
   const carrousel = useRef(null)
-
+  const gapFix = 80
 
   const handleLeftClick = (e) =>{
     e.preventDefault();
     // console.log("carrousel.current.scrollLeft:" + carrousel.current.scrollLeft);
     // console.log("carrousel.current.offsetWidth:" + carrousel.current.offsetWidth);
     // console.log(carrousel.current.children[0].clientWidth);
-    carrousel.current.scrollLeft -= carrousel.current.children[0].clientWidth - 32
+    carrousel.current.scrollLeft -= carrousel.current.children[0].clientWidth + gapFix
   }
   const handleRightClick = (e) =>{
     e.preventDefault();
     // console.log("carrousel.current.scrollLeft:" + carrousel.current.scrollLeft);
     // console.log("carrousel.current.offsetWidth:" + carrousel.current.offsetWidth);
     // console.log(carrousel.current);
-    carrousel.current.scrollLeft += carrousel.current.children[0].clientWidth + 32
+    carrousel.current.scrollLeft += carrousel.current.children[0].clientWidth + gapFix
   }
 
     return (

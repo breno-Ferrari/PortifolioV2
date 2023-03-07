@@ -83,14 +83,14 @@ export default function Projetos() {
                 <Slide key={id}>
                       {item.build ?  
                          <div className={styles.sectionProjeto__cardWrapperConstruction} >
-                         <Image 
-                         alt="gif de uma trator dormindo" 
-                         src={item.src} 
-                         height={200} 
-                         width={200} 
-                         className={styles.sectionProjeto__cardWrapperConstruction__imagePrev}>
-             
-                         </Image>
+                            <Image 
+                                alt="gif de uma trator dormindo" 
+                                src={item.src} 
+                                height={200} 
+                                width={200} 
+                                className={styles.sectionProjeto__cardWrapperConstruction__imagePrev}>
+                    
+                                </Image>
                          <h2 className={styles.sectionProjeto__cardWrapperConstruction__projectTitle}>
                              {item.titulo}
                          </h2>
