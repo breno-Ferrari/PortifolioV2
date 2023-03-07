@@ -18,7 +18,6 @@ export default function BarsMenu({modal,...props}) {
     useEffect(()=>{
       if(modal === true){
         CreateX();
-        console.log("teste");
       }
      
     },[modal])

@@ -32,6 +32,7 @@
         border-radius: 1.5rem;
         overflow: hidden;
         max-height: 31rem;
+        min-width: 15rem;
          @media (max-width:56.25rem){ 
             display: flex;
             flex-direction: column;
@@ -42,6 +43,7 @@
             margin: 3.1rem auto;
             max-width: 14rem;
             max-height: 31rem;
+            min-width: 15rem;
         }
         &__imagePrev{
             border: 0.6rem solid var(--border-bottom);
@@ -114,14 +116,14 @@
     &__cardWrapperConstruction{
         display: flex;
         flex-direction: column;
-        
         border: 0.2rem dashed var(--underConstructionColor);
         max-width: 19rem;
         margin: 3.1rem auto;
         border-radius: 1.5rem;
         overflow: hidden;
         max-height: 31rem;
-        @media (max-width:56.25rem){ 
+        min-width: 15rem;
+         @media (max-width:56.25rem){ 
             display: flex;
             flex-direction: column;
             border: 0.2rem dashed var(--underConstructionColor);
@@ -131,6 +133,7 @@
             margin: 3.1rem auto;
             max-width: 14rem;
             max-height: 31rem;
+            min-width: 15rem;
         }
         &__imagePrev{
             border: 0.6rem dashed red;
@@ -184,7 +187,7 @@
                     cursor: pointer;
                     &:hover{
                         color: var(--underConstructionColorHover);
-                        border:0.2rem solid var(--underConstructionColorHover);
+                        border:0.1rem solid var(--underConstructionColorHover);
                     }
                 }
                

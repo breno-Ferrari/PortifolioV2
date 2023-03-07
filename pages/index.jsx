@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Habilidades from "../src/components/Habilidades/habilidades";
 import SobreMim from "../src/components/SobreMim/sobreMim";
 import Projetos from "../src/components/Projetos/projetos";
+import Sliders from "../src/components/Sliders/slider";
 export default function Home() {
   const [nav,setNav] = useState(true)
  
