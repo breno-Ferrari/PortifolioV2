@@ -48,6 +48,7 @@ html,body{
 }
 body{
 	background-color: var(--bg-white);
+	transition: background-color 0.2s;
 }
 
 body[data-theme="light"] {
