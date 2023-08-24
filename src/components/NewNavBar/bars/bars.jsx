@@ -1,26 +1,19 @@
 import React from "react";
 import { useRef } from "react"
 import styles from "./bars.module.scss"
+import { forwardRef } from 'react';
 
 
+const BarsMenu = forwardRef(function createX(props, ref) {
+  const {bar1,bar2,bar3} = ref
 
-export default function BarsMenu({...props}) {
-    const ref1 = useRef(null);
-    const ref2 = useRef(null)
-    const ref3 = useRef(null)
+  return (
+    <div className={styles.container}>
+      <div className={styles.bar1} ref={bar1}></div>
+      <div className={styles.bar2} ref={bar2}></div>
+      <div className={styles.bar3} ref={bar3}></div>
+    </div>
+  )
+});
 
-    const CreateX = () =>{
-      ref1.current?.classList.toggle(`${styles.container__change__bar1}`)
-      ref2.current?.classList.toggle(`${styles.container__change__bar2}`)
-      ref3.current?.classList.toggle(`${styles.container__change__bar3}`)      
-    }
-
-    return (
-      <div className={styles.container} onClick={CreateX} {...props}>
-        <div className={styles.bar1} ref={ref1}></div>
-        <div className={styles.bar2} ref={ref2}></div>
-        <div className={styles.bar3} ref={ref3}></div>
-      </div>
-    )
-
-  }
+export default BarsMenu;

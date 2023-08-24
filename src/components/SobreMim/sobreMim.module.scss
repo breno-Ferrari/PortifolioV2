@@ -3,13 +3,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    scroll-margin-top: 5.313rem;
+    scroll-margin-top: 5rem;
     margin: 1.9rem auto 0rem auto;
     width: 95%;
     border-bottom: 0.2rem solid var(--border-bottom);
     height: 100vh;
     color: var(--text-content-color);  
-    overflow: hidden; 
     &__titleContainer{
         width: 100%;
         &__title{

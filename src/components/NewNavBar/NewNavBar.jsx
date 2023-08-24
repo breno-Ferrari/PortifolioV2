@@ -1,9 +1,9 @@
 import styles from "./NewNavBar.module.scss"
+import stylesBar from "./bars/bars.module.scss"
 import BarsMenu from "./bars/bars"
 import NavText from "./const"
 import Link from "../Link/link"
 import ThemeToggle from "../ThemeToggle/themeToggle"
-
 import { BsGithub,BsLinkedin,BsFillFileEarmarkPdfFill } from "react-icons/bs";
 
 import { useEffect, useRef, useState } from "react"
@@ -11,48 +11,54 @@ import gsap from "gsap"
 
 export default function NewNavBar() {
 
-    const ref = useRef(new Array(NavText.length));
+    const refList = useRef(new Array(NavText.length));
     const [list,setList] = useState("1")
-    const [visible,setVisible] = useState(true)
+    const [visible,setVisible] = useState(false)
     const [menuMobile,setMenuMobile] = useState(true);
     const [activeTheme, setActiveTheme] = useState("light");
     const inactiveTheme = activeTheme === "light" ? "dark" : "light";
+    const tl = gsap.timeline();
+        
+    const bar1 = useRef(null);
+    const bar2 = useRef(null)
+    const bar3 = useRef(null)
+    const ref = {
+      bar1:bar1, 
+      bar2:bar2, 
+      bar3:bar3
+    }
 
-    // criar load page e trocar para layout
+
+    // criar load page
     useEffect(() => {
         document.body.dataset.theme = activeTheme;
       }, [activeTheme]);
   
- 
-
-    useEffect(()=>{
-      
-    },[])
-    
     function activeMenuMobile(){
       let body = document.querySelector("body");
       const windowSize = window.innerWidth
         if (windowSize <= 900) {
           if(menuMobile === true){
             body.style.overflow = "hidden";
-            setMenuMobile(!menuMobile)
           }else{
             body.style.overflow = "scroll"; 
-            setMenuMobile(!menuMobile)
           }
-          
         }
-      
-  }
-  
+        setMenuMobile(!menuMobile)
+    }
 
-    const tl = gsap.timeline()
+    const CreateX = () =>{
+      bar1.current?.classList.toggle(`${stylesBar.container__change__bar1}`)
+      bar2.current?.classList.toggle(`${stylesBar.container__change__bar2}`)
+      bar3.current?.classList.toggle(`${stylesBar.container__change__bar3}`)   
+    }
+  
     const listAnimation = () =>{  
       const duration = 0.5;
       const delay = 0.3;
       const xMove = 30;
       if(list === "0"){
-        tl.to(ref.current, {
+        tl.to(refList.current, {
           xPercent: -xMove,
           autoAlpha: list,
           duration: duration,
@@ -60,9 +66,8 @@ export default function NewNavBar() {
         })
         setList("1")
         setVisible("0")
-        activeMenuMobile();
       }else{
-        tl.to(ref.current, {
+        tl.to(refList.current, {
           xPercent: xMove,
           autoAlpha: list,
           duration: duration,
@@ -70,23 +75,26 @@ export default function NewNavBar() {
         })
         setList("0")
         setVisible("1")
-        activeMenuMobile();
       }
+      activeMenuMobile();
+      CreateX();
     } 
+
+
 
     return (
       <section className={`${styles.container + " "} ${!menuMobile ? styles.active : ""}`}>
         <nav className={styles.container_navBar}>
           <div onClick={listAnimation}>
-            <BarsMenu />
+            <BarsMenu ref={ref}/>
           </div>
           <ul className={styles.container_navBar_list}>
             {
               NavText.map((item,i)=>(
                 <li key={i} className={styles.container_navBar_list_line}
-                ref={(el) => (ref.current[i] = el)} >
+                ref={(el) => (refList.current[i] = el)} >
                   {visible ?   
-                    <Link href={item.href}>
+                    <Link href={item.href} onClick={listAnimation}>
                         {item.value}
                     </Link>:""}
                 </li>
