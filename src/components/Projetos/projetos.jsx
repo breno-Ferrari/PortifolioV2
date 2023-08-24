@@ -101,10 +101,9 @@ export default function Projetos() {
                              <p>Tecnologias que serão utilizadas:</p>
                          </div>
                          <div className={styles.sectionProjeto__cardWrapperConstruction__tec}>
-                             {item.tec1}
-                             {item.tec2}
-                             {item.tec3}
-                             {item.tec4}
+                            {item.tecs.map((Tec) => (
+                               <div key={Math.random()}><Tec/></div>
+                            ))}
                          </div>
                          <div className={styles.sectionProjeto__cardWrapperConstruction__container}>
                              <div className={styles.sectionProjeto__cardWrapperConstruction__container__anchor}>
@@ -139,10 +138,9 @@ export default function Projetos() {
                                 <p>Principais tecnologias utilizadas:</p>
                             </div>
                             <div className={styles.sectionProjeto__cardWrapper__tec}>
-                                {item.tec1}
-                                {item.tec2}
-                                {item.tec3}
-                                {item.tec4}
+                            {item.tecs.map((Tec) => (
+                               <div key={Math.random()}><Tec/></div>
+                            ))}
                             </div>
                             <div className={styles.sectionProjeto__cardWrapper__container}>
                                 {item.link ? 
