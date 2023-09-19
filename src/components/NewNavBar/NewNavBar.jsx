@@ -16,6 +16,7 @@ export default function NewNavBar() {
     const [visible,setVisible] = useState(false)
     const [menuMobile,setMenuMobile] = useState(true);
     const [activeTheme, setActiveTheme] = useState("light");
+    // const inactiveTheme = activeTheme === "light" ? "dark" : "light";
     const inactiveTheme = activeTheme === "light" ? "dark" : "light";
     const tl = gsap.timeline();
         
