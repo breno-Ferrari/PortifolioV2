@@ -1,4 +1,4 @@
-.sobreMim{ 
+.sobreMim {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,53 +8,67 @@
     width: 95%;
     border-bottom: 0.2rem solid var(--border-bottom);
     height: 100vh;
-    color: var(--text-content-color);  
-    &__titleContainer{
+    color: var(--text-content-color);
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    &__titleContainer {
         width: 100%;
-        &__title{
+
+        &__title {
             color: var(--bg-pre);
-            font-size: clamp(2.5rem,1vw, 5rem); 
+            font-size: clamp(2.5rem, 1vw, 5rem);
         }
     }
-    &__content{
+
+    &__content {
         display: flex;
-        width: 100%;
+        max-width: 100%;
         align-items: center;
         justify-content: center;
-        &__texts{
+
+        &__texts {
             width: 50%;
             font-size: clamp(1.5rem, 1vw, 2rem);
             line-height: 2rem;
-            &__line{
+
+            &__line {
                 margin: 1.5rem 0;
             }
         }
-        &__image{
+
+        &__image {
             display: flex;
             justify-content: center;
             width: 50%;
             font-size: clamp(2rem, 1vw, 3rem);
         }
     }
-    @media (max-width:56.25rem){  
+
+    @media (max-width:56.25rem) {
         height: 100%;
-        &__titleContainer{
+
+        &__titleContainer {
             width: 100%;
             margin: 1rem 0;
-            &__title{
+
+            &__title {
                 text-align: center;
                 color: var(--bg-pre);
-                font-size: clamp(3rem,1vw, 5rem); 
+                font-size: clamp(3rem, 1vw, 5rem);
             }
         }
-        &__content{
-           display: flex;
-           flex-direction: column-reverse;
-            &__texts{
-               width: 90%;
-               text-align: center;
+
+        &__content {
+            display: flex;
+            flex-direction: column-reverse;
+
+            &__texts {
+                width: 90%;
+                text-align: center;
             }
-            &__image{
+
+            &__image {
                 margin: 1rem 0;
                 width: 80%;
             }

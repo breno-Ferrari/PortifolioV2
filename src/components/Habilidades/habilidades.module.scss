@@ -1,4 +1,4 @@
-.habilidades{
+.habilidades {
     scroll-margin-top: 3rem;
     margin: 1.9rem auto 0rem auto;
     width: 95%;
@@ -7,81 +7,96 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    // overflow: hidden;
-    &__container{
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    &__container {
         display: flex;
         align-items: center;
         width: 80%;
         padding-bottom: 1.9rem;
-        &__left{
+
+        &__left {
             width: 80%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-right: 1rem;
-            &__text{
-                &:nth-child(1){
+
+            &__text {
+                &:nth-child(1) {
                     color: var(--text-content-color);
-                    font-size: clamp(4.0rem,1vw, 6rem); 
+                    font-size: clamp(4.0rem, 1vw, 6rem);
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     color: var(--bg-pre);
-                    font-size: clamp(4rem,1vw, 6rem); 
+                    font-size: clamp(4rem, 1vw, 6rem);
                 }
             }
         }
-        &__rigth{
+
+        &__rigth {
             display: flex;
             flex-direction: column;
             width: 100%;
             font-size: 2rem;
-            &__bar{
+
+            &__bar {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 width: 90%;
                 margin: 0.5rem;
-                &__stacks{
+
+                &__stacks {
                     display: flex;
                     align-items: stretch;
                     justify-content: flex-start;
-                    &__stack{
+
+                    &__stack {
                         color: var(--texthighColorDarker);
-                        font-size: clamp(1.5rem,1vw, 2rem); 
+                        font-size: clamp(1.5rem, 1vw, 2rem);
                     }
                 }
             }
         }
     }
-    @media (max-width:56.25rem){ 
+
+    @media (max-width:56.25rem) {
         width: 100%;
         height: 100%;
-        &__container{
+
+        &__container {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             padding-bottom: 1.9rem;
-            &__left{
+
+            &__left {
                 width: 80%;
                 padding-bottom: 1.9rem;
-                &__text{
-                    &:nth-child(1){
+
+                &__text {
+                    &:nth-child(1) {
                         color: var(--text-content-color);
-                        font-size: clamp(3rem,1vw, 4rem); 
+                        font-size: clamp(3rem, 1vw, 4rem);
                     }
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         color: var(--bg-pre);
-                        font-size: clamp(3rem,1vw, 4rem); 
+                        font-size: clamp(3rem, 1vw, 4rem);
                     }
                 }
             }
-            &__rigth{
+
+            &__rigth {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 height: 100%;
                 font-size: 1.5rem;
-               
+
             }
         }
     }
