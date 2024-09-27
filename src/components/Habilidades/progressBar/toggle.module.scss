@@ -1,40 +1,44 @@
-.container{
-    margin: 0 auto;
-    width: 100%;
+.container {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  top: 35%;
+
+  &__slider {
     position: relative;
-    top: 35%;
-    &__slider{
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        height: 8px;
-        background: #f1f1f1;
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
-        border-radius: 4px;
-        overflow: hidden;
-        &::after{
-            content: '';
-            position: absolute;
-            left: 0;
-            width: 0;
-            height: 100%;
-            border-radius: 4px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, .2);
-            animation: load 3s normal forwards ;
-            background-color:var(--bg-pre) ;
-        }
+    display: inline-block;
+    width: 100%;
+    height: 8px;
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 100%;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+      animation: load 3s normal forwards;
+      background: var(--toggle-after-bg);
     }
-    @media (max-width:73rem) {
-        top: -7%; 
-    }   
+  }
+
+  @media (max-width:73rem) {
+    top: -7%;
+  }
 }
 
 
 @keyframes load {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: var(--bg-size);
-    }
+  0% {
+    width: 0;
   }
+
+  100% {
+    width: var(--bg-size);
+  }
+}
