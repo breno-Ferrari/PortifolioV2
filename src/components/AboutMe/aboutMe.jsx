@@ -30,13 +30,13 @@ export default function AboutMe() {
         <div className={styles.sectionAboutMe__aboutMe__content}>
           <div className={styles.sectionAboutMe__aboutMe__content__text}>
             <p className={styles.sectionAboutMe__aboutMe__content__text__p}>
-              Me chamo Breno Velosa Ferrari, moro em São Paulo, graduando em engenharia da computação pela Faculdade de informatica e administração Paulista(FIAP) e estou no último semestre.
+              Tenho 24 anos, sou formado em engenharia de computação e tenho como objetivos de estudos/trabalho, a área de desenvolvimento Web, estou sempre em busca de novos conhecimentos e oportunidades. Possuo ótimo raciocio logico e me relaciono com facilidade.
             </p>
             <p className={styles.sectionAboutMe__aboutMe__content__text__p}>
-              Tive meu primeiro contato com desenvolvimento web durante a pandemia, em 2020, de lá pra cá venho desenvolvendo minha carreira na área de programação com foco atualmente no Front-end.
+              Tive meu primeiro contato com desenvolvimento web durante a pandemia, em 2020, de lá pra cá venho desenvolvendo minha carreira na área de programação com quase 3 anos de desenvolvimento web voltado ao Front-end e atualmente atuo como analista de dados.
             </p>
             <p className={styles.sectionAboutMe__aboutMe__content__text__p}>
-              Meu objetivo atual é me especializar em Front-end e crescer cada vez mais tanto profissionalmente quanto como pessoa.
+              Atualmente estou matriculado em uma pós-graduação com foco em fullstack, onde estou cada vez mais aperfiçoando minhas skills.
             </p>
           </div>
           <div className={styles.sectionAboutMe__aboutMe__content__imageContainer}>
