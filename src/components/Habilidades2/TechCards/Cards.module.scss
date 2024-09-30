@@ -27,6 +27,7 @@
         &_text {
             font-size: clamp(1.5rem, 1vw, 2rem);
             line-height: 2rem;
+            text-align: center;
         }
 
 
@@ -35,11 +36,27 @@
 
 @media (max-width: 768px) {
     .CardContainer {
-        justify-content: center; // Para telas menores, centraliza os cartões
-    }
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
 
-    .CardContainer_card {
-        width: 8rem; // Reduz a largura dos cartões em telas pequenas
-        height: 8rem;
+        &_card {
+            width: 100%;
+
+            &_Icon {
+                &>* {
+                    transform: scale(2.5);
+                }
+
+            }
+
+            &_text {
+                font-size: clamp(1.5rem, 1vw, 2rem);
+                line-height: 2rem;
+                text-align: center;
+            }
+
+
+        }
     }
 }
