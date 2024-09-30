@@ -1,14 +1,11 @@
 
 import Header from "../src/components/Header/header";
-import Footer from "../src/components/Footer/footer";
-import NavBar from "../src/components/NavBar/navBar";
-import NavBarMobile from "../src/components/NavBarMobile/navBarMobile";
+import Footer from "../src/components/Footer/footer";;
 import NewNavBar from "../src/components/NewNavBar/NewNavBar";
-import { useEffect, useState } from "react";
 import Habilidades from "../src/components/Habilidades/habilidades";
+import Habilidades2 from "../src/components/Habilidades2/habilidades2";
 import SobreMim from "../src/components/SobreMim/sobreMim";
 import Projetos from "../src/components/Projetos/projetos";
-import Sliders from "../src/components/Sliders/slider";
 export default function Home() {
 
   return (
@@ -16,7 +13,8 @@ export default function Home() {
       <NewNavBar />
       <Header />
       <SobreMim />
-      <Habilidades />
+      {/* <Habilidades /> */}
+      <Habilidades2 />
       <Projetos />
       <Footer />
     </>

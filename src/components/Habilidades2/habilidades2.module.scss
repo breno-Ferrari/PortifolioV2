@@ -1,0 +1,31 @@
+.habilidades {
+    scroll-margin-top: 3rem;
+    margin: 1.9rem auto 2rem auto;
+    width: 95%;
+    border-bottom: 0.2rem solid var(--border-bottom);
+    color: var(--text-content-color);
+    display: flex;
+    height: fit-content;
+    // align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+    &_title {
+        color: var(--text-content-color);
+        font-size: clamp(4.0rem, 1vw, 6rem);
+
+        &_text {
+            text-align: center;
+
+            &:nth-child(1) {
+                color: var(--text-content-color);
+                font-size: clamp(3rem, 1vw, 4rem);
+            }
+
+            &:nth-child(2) {
+                color: var(--bg-pre);
+                font-size: clamp(3rem, 1vw, 4rem);
+            }
+        }
+    }
+}
