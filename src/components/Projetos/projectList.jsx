@@ -46,20 +46,20 @@ const projectist =
       git: "https://github.com/breno-Ferrari/PortifolioV2",
       build: false
     },
-    {
-      titulo: "Gerador de senha",
-      preview: "Um gerador de senha com niveis de segurança, feito com algumas das novas funcionalidades do Next 13",
-      src: "/asset/senha.png",
-      tecs: [
-        SiNextdotjs,
-        FaReact,
-        SiTypescript,
-        FaSass,
-      ],
-      link: "https://password-generator-breno-ferrari.vercel.app/",
-      git: "https://github.com/breno-Ferrari/passwordGenerator",
-      build: false
-    },
+    // {
+    //   titulo: "Gerador de senha",
+    //   preview: "Um gerador de senha com niveis de segurança, feito com algumas das novas funcionalidades do Next 13",
+    //   src: "/asset/senha.png",
+    //   tecs: [
+    //     SiNextdotjs,
+    //     FaReact,
+    //     SiTypescript,
+    //     FaSass,
+    //   ],
+    //   link: "https://password-generator-breno-ferrari.vercel.app/",
+    //   git: "https://github.com/breno-Ferrari/passwordGenerator",
+    //   build: false
+    // },
     {
       titulo: "E-commerce",
       preview: "Loja e-commerce feita com react e reduz para gerenciamento de estados globais e a biblioteca 'react router dom' para gerenciamento de rotas",
@@ -70,25 +70,24 @@ const projectist =
         DiJavascript1,
         FaSass,
       ],
-      link: "https://ecommerce-breno-ferrari.vercel.app/",
+      link: false,
       git: "https://github.com/breno-Ferrari/ecommerce",
       build: false
     },
-    // {
-    //   titulo: "Blog-ensino",
-    //   preview: "API em Node.js com PostgreSQL, gerenciada no DBeaver, simulando cadastro de alunos em uma aplicação web, tudo via Docker.",
-    //   src: "",
-    //   tecs: [
-    //     FaNode,
-    //     DiPostgresql,
-    //     FaDocker,
-    //     GiBeaver
-
-    //   ],
-    //   link: false,
-    //   git: "https://github.com/breno-Ferrari/",
-    //   build: false
-    // },
+    {
+      titulo: "Blog-ensino",
+      preview: "API em Node.js com PostgreSQL, gerenciada no DBeaver, simulando cadastro de alunos em uma aplicação web, tudo via Docker.",
+      src: "",
+      tecs: [
+        FaNode,
+        DiPostgresql,
+        FaDocker,
+        GiBeaver
+      ],
+      link: false,
+      git: "https://github.com/breno-Ferrari/",
+      build: false
+    },
     {
       titulo: "Em desenvolvimento",
       preview: "Em desenvolvimento",
