@@ -85,7 +85,7 @@ const projectist =
         GiBeaver
       ],
       link: false,
-      git: "https://github.com/breno-Ferrari/",
+      git: "https://github.com/breno-Ferrari/Blog-ensino",
       build: false
     },
     {

@@ -105,7 +105,7 @@ export default function NewNavBar() {
       </nav>
       <div className={styles.container_itens}>
         <ThemeToggle id={"theme"} click={() => setActiveTheme(inactiveTheme)} />
-        <a href="./files/CV_BRENO_FERRARI.pdf" target="_blank" rel="noopener noreferrer" alt="Download do curriculo em PDF" download className={styles.container_itens_iten}><BsFillFileEarmarkPdfFill /></a>
+        <a href="./files/cv_breno_ferrari_port.pdf" target="_blank" rel="noopener noreferrer" alt="Download do curriculo em PDF" download className={styles.container_itens_iten}><BsFillFileEarmarkPdfFill /></a>
         <a href="https://bit.ly/3q4s0oL" target="_blank" rel="noreferrer" alt="Link para o gitHub" className={styles.container_itens_iten}><BsGithub /></a>
         <a href="https://bit.ly/3cIuTZe" target="_blank" rel="noreferrer" alt="Link para o linkedin" className={styles.container_itens_iten}><BsLinkedin /></a>
       </div>

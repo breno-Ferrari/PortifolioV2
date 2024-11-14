@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,35 +86,56 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-html,body{
+html,
+body {
 	font-family: 'Roboto', sans-serif;
 	scroll-behavior: smooth;
 }
-body{
+
+body {
 	background-color: var(--bg-white);
 	transition: background-color 0.2s;
 }
@@ -66,59 +155,61 @@ body[data-theme="light"] {
 	--barVisited: hsl(195, 100%, 65%);
 	--texthighColorDark: hsl(195, 100%, 65%);
 	--texthighColorDarker: hsl(195, 100%, 35%);
-	--underConstructionColor: hsl(42, 95% ,50%);
-	--underConstructionColorHover: hsl(42, 95% ,40%);
-	--bg-NavMobile:hsl(210, 6%, 14%);
-	--text-content-color:hsl(0, 0%, 0%);
-	--text-content-color-hl:hsl(200, 100%, 50%);
+	--underConstructionColor: hsl(42, 95%, 50%);
+	--underConstructionColorHover: hsl(42, 95%, 40%);
+	--bg-NavMobile: hsl(210, 6%, 14%);
+	--text-content-color: hsl(0, 0%, 0%);
+	--text-content-color-hl: hsl(200, 100%, 50%);
 
-	--themebg:hsl(195, 100%, 65%);
-	--themethumb:hsl(207, 85%, 98%);
-	--themeIcon-color:hsl(207, 85%, 98%);
-	--theme-hover:hsl(195, 100%, 35%);
-	--themebg-checked:hsl(210, 6%, 14%);
+	--themebg: hsl(195, 100%, 65%);
+	--themethumb: hsl(207, 85%, 98%);
+	--themeIcon-color: hsl(207, 85%, 98%);
+	--theme-hover: hsl(195, 100%, 35%);
+	--themebg-checked: hsl(210, 6%, 14%);
 
-	--swiper-color:hsl(195, 100%, 65%);
+	--swiper-color: hsl(195, 100%, 65%);
 }
 
 body[data-theme="dark"] {
-	--bg-white:hsl(210, 6%, 14%);
-	--bg-linear: hsl(178, 100%, 45%);
+	--bg-white: hsl(206, 100%, 12%);
+	--bg-linear: #a9d6e5;
 
-	--bg-pre: hsl(178, 100%, 45%);
+	--bg-pre: #a9d6e5;
 	--bg-pos: hsl(195, 100%, 90%);
 
-	--border-bottom: hsl(178, 100%, 45%);
-	--navBar-color-itens: hsl(178, 100%, 45%);
-	--bgfooter: hsl(178, 100%, 45%);
-	--var-text-footer:hsl(210, 6%, 14%);
-	--arrowColor: hsl(178, 100%, 45%);
-	--texthighColor: hsl(178, 100%, 45%);
-	--barVisited: hsl(178, 100%, 45%);
-	--texthighColorDark: hsl(178, 100%, 45%);
-	--texthighColorDarker: hsl(178, 100%, 35%);
-	--underConstructionColor: hsl(42, 95% ,50%);
-	--underConstructionColorHover: hsl(42, 95% ,40%);
-	--bg-NavMobile:hsl(210, 6%, 14%);
-	--text-content-color:hsl(0, 0%, 80%);
+	--border-bottom: #a9d6e5;
+	--navBar-color-itens: #a9d6e5;
+	--bgfooter: #a9d6e5;
+	--var-text-footer: #012a4a;
+	--arrowColor: #a9d6e5;
+	--texthighColor: #a9d6e5;
+	--barVisited: #468faf;
+	--texthighColorDark: #a9d6e5;
+	--texthighColorDarker: #a9d6e5;
+	--underConstructionColor: hsl(42, 95%, 50%);
+	--underConstructionColorHover: hsl(42, 95%, 40%);
+	--bg-NavMobile: #012a4a;
+	--text-content-color: #a9d6e5;
 
-	--themebg:hsl(178, 100%, 45%);
-	--themethumb:hsl(210, 6%, 14%);
-	--theme-hover:hsl(178, 100%, 25%);
-	--themebg-checked:hsl(178, 100%, 45%);
-	--themeIcon-color:hsl(210, 6%, 14%);
+	--themebg: #2a6f97;
+	--themethumb: #012a4a;
+	--theme-hover: #a9d6e5;
+	--themebg-checked: #a9d6e5;
+	--themeIcon-color: #012a4a;
 
-	--swiper-color:hsl(178, 100%, 45%);
+	--swiper-color: #468faf;
 }
 
 
 /* troca de cores do slider */
-.swiper .swiper-button-prev{
+.swiper .swiper-button-prev {
 	color: var(--swiper-color);
 }
-.swiper .swiper-button-next{
+
+.swiper .swiper-button-next {
 	color: var(--swiper-color);
 }
-.swiper .swiper-pagination .swiper-pagination-bullet-active{
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
 	background: var(--swiper-color);
 }
